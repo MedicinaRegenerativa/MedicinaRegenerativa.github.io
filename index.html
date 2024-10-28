@@ -1,1 +1,689 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Medicina Regenerativa</title>
+    <!-- Importación de Tailwind CSS desde CDN -->
+
+    <!-- Importación de la fuente "Poppins" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Importación de Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+       
+
+    <style>
+        /* Aplicar la fuente "Poppins" a todo el documento */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+<nav class="bg-blue-900 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+            <a href="#" class="flex items-center py-4 px-2 text-white">
+                <!-- Imagen en lugar del SVG -->
+                <img src="mr2.png" alt="Logo Clínica Regenerativa" class="h-12 w-auto mr-2">
+                <!--<span class="font-bold text-xl">Clínica Regenerativa</span>-->
+            </a>
+        </div>
+
+        <!-- Primary Nav centrado -->
+        <div class="hidden md:flex items-center space-x-1 flex-grow justify-center">
+            <a href="regeneraaa.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Home</a>
+            <a href="#services" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Servicios</a>
+            <a href="nosotros.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Nosotros</a>
+            <a href="#contact" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Contacto</a>
+            <a href="TIENDA.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Tienda Virutal</a>
+        </div>
+
+        <!-- Secondary Nav -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="#appointment" class=" bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold px-12 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+        </div>
+
+
+        <!-- Mobile Button -->
+        <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+                <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu hidden md:hidden bg-blue-900  text-center">
+        <a href="#" class="block py-2 px-4 text-white hover:bg-blue-600">Inicio</a>
+        <a href="#services" class="block py-2 px-4 text-white hover:bg-blue-600">Servicios</a>
+        <a href="#team" class="block py-2 px-4 text-white hover:bg-blue-600">Equipo</a>
+        <a href="#contact" class="block py-2 px-4 text-white hover:bg-blue-600">Contacto</a>
+        <a href="#appointment" class="block py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700  text-white text-lg font-semibold px-12 py-4  shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+
+
+<section class="hero-section bg-white relative overflow-hidden mt-12 md:mt-0 " style="background-image: url('rr.jpg');">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+
+        <!-- Texto Hero -->
+        <div class="md:w-1/2 text-center ">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600 mb-6">
+                RECUPERA LA VITALIDAD QUE TU CUERPO NECESITA y Encuentra una Solución Duradera 
+            </h1>
+            <p class="text-xl text-gray-700 mb-10">
+                En nuestra clínica, ofrecemos tratamientos innovadores y personalizados para ayudarte a regenerar tu salud y bienestar.
+            </p>
+            <a href="#appointment" class=" bg-gradient-to-r from-blue-500 to-blue-700 text-white py-4 font-semibold px-6 rounded-full shadow-lg hover:bg-cyan-600  hover:shadow-2xl transition-transform">
+
+
+                Agendar Cita
+            </a>
+        </div>
+
+        <!-- Imagen Hero alineada centrada -->
+        <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center items-center mb-4 py-4">
+            <img src="gg.png" alt="Imagen Medicina Regenerativa" class="w-full max-w-md rounded-lg ">
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- About Us Section -->
+<section class="bg-blue-600 py-20" id="about">
+    <div class="container mx-auto px-4">
+        
+        <div class="flex flex-col md:flex-row items-center">
+            <!-- Imagen -->
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <img src="espera.jpg" alt="Equipo de la Clínica" class="w-full rounded-lg shadow-lg">
+            </div>
+            <!-- Texto Sobre Nosotros -->
+            <div class="md:w-1/2">
+               
+            <h3 class="text-gray-200 font-semibold uppercase">SOBRE NOSOTROS</h3>
+            <h2 class="text-4xl font-bold mt-2 text-white">Conoce Nuestra Clínica</h2>
+                <br>
+                <p class="text-lg text-gray-200 mb-6 text-justify">En nuestra clínica, nos dedicamos a ofrecer tratamientos innovadores y personalizados para mejorar la salud y el bienestar de nuestros pacientes. Creemos en un enfoque integral para la medicina regenerativa, adaptándonos a las necesidades individuales de cada persona.  Creemos en un enfoque integral para la medicina regenerativa, adaptándonos a las necesidades individuales de cada persona.</p>
+                <a href="#more-info" class=" bg-gradient-to-r from-blue-700 to-blue-900 text-white py-3 font-semibold px-6 rounded-full hover:bg-cyan-600 transition-transform"style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);"> Leer Más</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+<!-- Services Section -->
+<section class="bg-gray-100 py-20" id="services">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-blue-600 font-semibold uppercase">NUESTROS SERVICIOS</h3>
+            <h2 class="text-4xl font-bold mt-2 text-gray-700">Lo Que Ofrecemos</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Service Card 1 -->
+<div class="bg-white p-8 rounded-lg shadow-lg  transition-transform transform hover:scale-105 hover:shadow-2xl">
+    <img src="sueroterapia.png" alt="Icono de Desintoxicación de Adicciones" class="w-24 h-24 mx-auto mb-4">
+
+
+    <h3 class="text-2xl font-semibold mb-2 text-blue-400 text-center">Vitaminas Intravenosas</h3>
+    <p class="text-gray-700 text-center">Las vitaminas intravenosas son una forma efectiva de administrar nutrientes esenciales directamente en el torrente sanguíneo, aumentando la energía, mejorando la piel y fortaleciendo el sistema inmunológico.</p>
+    <br>
+    <a href="#" class="text-blue-500 hover:text-blue-600 font-semibold block text-center">Leer Más</a>
+</div>
+
+<!-- Service Card 2 -->
+<div class="bg-blue-900 p-8 rounded-lg shadow-lg  transition-transform transform hover:scale-105 hover:shadow-2xl">
+    <img src="icoozo.png" alt="Icono de Ozonoterapia" class="w-24 h-24 mx-auto mb-4">
+    <h3 class="text-2xl font-semibold mb-2 text-blue-500 text-center">Ozonoterapia</h3>
+    <p class="text-gray-200 text-center">La ozonoterapia es un tratamiento innovador que utiliza ozono para mejorar la salud, fortalecer el sistema inmunológico y aliviar el dolor. Ideal para condiciones crónicas y lesiones.</p>
+    <br>
+    <a href="#" class="text-blue-500 hover:text-bue-600 font-semibold block text-center">Leer Más</a>
+</div>
+
+<!-- Service Card 3 -->
+<div class="bg-white p-8 rounded-lg shadow-lg  transition-transform transform hover:scale-105 hover:shadow-2xl">
+    <img src="rtrt.png" alt="Icono de Desintoxicación de Adicciones" class="w-24 h-24 mx-auto mb-4">
+    <h3 class="text-2xl font-semibold mb-2 text-blue-500 text-center">Desintoxicación de Adicciones</h3>
+    <p class="text-gray-700 text-center">Este tratamiento integral ayuda a liberar al cuerpo de sustancias tóxicas y reduce los síntomas de abstinencia, promoviendo la recuperación y el bienestar mental.</p>
+    <br>
+    <a href="#" class="text-blue-500 hover:text-blue-600 font-semibold block text-center">Leer Más</a>
+</div>
+
+            
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Banner Section -->
+<section class="bg-blue-600 text-white py-8 ">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+            <!-- Banner Text -->
+            <div class="text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0">
+                <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-300 sm:text-6xl mb-6">¡Agenda tu Videollamada de Valoración Gratuita!</h2>
+
+    
+                <p class="text-lg mb-4">Descubre cómo nuestra clínica puede ayudarte a alcanzar tus objetivos de salud. Agenda una videollamada con uno de nuestros especialistas y obtén una valoración personalizada sin costo.</p>
+                <a href="#schedule" class="inline-block bg-gradient-to-r from-blue-700 to-blue-900 text-white py-4 font-semibold px-6 rounded-full hover:bg-cyan-600  transition-transform" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">Agenda tu Videollamada</a>
+            </div>
+            <!-- Banner Image -->
+            <div class="lg:w-1/2">
+                <img src="videolla.png" alt="Videollamada de Valoración" class="w-full h-auto rounded-lg" style="filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 1));">
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Our Products Section -->
+<section class="bg-gray-100 py-20" id="products">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-blue-600 font-semibold uppercase">Nuestros Productos</h3>
+            <h2 class="text-4xl font-bold mt-2">Descubre Los Productos Ozonizados!</h2>
+            <p class="text-gray-600 mt-4">Explora nuestra gama de productos innovadores diseñados para mejorar tu salud y bienestar.</p>
+        </div>
+        <!-- Lista de Cremas -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Producto 1 -->
+            <div class="product-card bg-white border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <div class="relative">
+                    <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+                    <div class="flex items-center justify-center py-2">
+                        <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+                    </div>
+                    <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="product-card bg-white border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <div class="relative">
+                    <img src="varios.jpg" alt="Crema 2" class="w-full h-72 object-cover rounded-t-lg">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-semibold text-blue-800">Crema Antiedad</h3>
+                    <div class="flex items-center justify-center py-2">
+                        <p class="text-gray-700 text-2xl font-bold">$29.99</p>
+                    </div>
+                    <a href="#crema2" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+                </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="product-card bg-white border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <div class="relative">
+                    <img src="manos3.jpg" alt="Crema 3" class="w-full h-72 object-cover rounded-t-lg">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-semibold text-blue-800">Crema Para Manos</h3>
+                    <div class="flex items-center justify-center py-2">
+                        <p class="text-gray-700 text-2xl font-bold">$14.99</p>
+                    </div>
+                    <a href="#crema3" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+                </div>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div class="product-card bg-white border border-gray-300 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <div class="relative">
+                    <img src="ozzz.jpg" alt="Crema 4" class="w-full h-72 object-cover rounded-t-lg">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-semibold text-blue-800">Crema Suavizante</h3>
+                    <div class="flex items-center justify-center py-2">
+                        <p class="text-gray-700 text-2xl font-bold">$24.99</p>
+                    </div>
+                    <a href="#crema4" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Añadir más productos aquí si es necesario -->
+    </div>
+        <!-- Botón de Ir a la Tienda Virtual -->
+        <div class="text-center mt-12">
+             <a href="#schedule" class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white py-4 font-semibold px-6 rounded-full  hover:bg-cyan-600  transition-transform" style="box-shadow: 0 8px 12px rgba(0, 0, 0 , 0.5);">Ir a Nuestra Tienda Virtual</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Sección de Contáctanos -->
+<section class="bg-blue-600 text-white py-16">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    <!-- Título principal con degradado -->
+    <h2 class="text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-300 sm:text-6xl mb-6">
+      ¡Hablemos!
+    </h2>
+
+    <!-- Descripción breve -->
+    <p class="text-xl text-white mb-10 sm:text-2xl">
+      Estamos aquí para resolver tus dudas. No esperes mas para cambar tu calidad de Vida!
+      Contáctanos y recibe atención personalizada de nuestros especialistas.
+    </p>
+
+    <!-- Botón redirigido a WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5211234567890&text=Hola,%20me%20gustaría%20recibir%20más%20información."
+       target="_blank"
+       class="inline-block bg-gradient-to-r from-blue-700 to-blue-900 text-white text-lg font-semibold px-12 py-4 rounded-full  hover:scale-105 transition-transform"style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+      Enviar mensaje por WhatsApp
+    </a>
+
+    <!-- Mensaje secundario debajo del botón -->
+    <p class="mt-6 text-gray-200 text-sm">
+      Respuesta rápida a través de WhatsApp
+    </p>
+  </div>
+</section>
+
+
+
+
+
+<!-- Testimonials Video Section -->
+<section class="bg-white py-20" id="video-testimonials">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-blue-600 font-semibold uppercase">Testimonios</h3>
+            <h2 class="text-4xl font-bold mt-2">Lo Que Dicen Nuestros Clientes</h2>
+            <p class="text-gray-600 mt-4">Mira lo que nuestros clientes tienen que decir sobre sus experiencias con nosotros.</p>
+        </div>
+
+        <!-- Grid de videos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Video 1 -->
+            <div class="bg-white rounded-lg overflow-hidden" style="box-shadow: 0 8px 12px rgba(0, 0, 0 , 0.8);">
+                <div class="flex justify-center items-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jWw8_P16bVc?si=dFldJFDpDDAwjnZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+
+                <!--<div class="p-4">
+                    <h4 class="text-lg font-bold text-gray-800">Testimonio de Cliente 1</h4>
+                    <p class="text-gray-600 mt-2">"¡Excelente servicio! Muy satisfecho con los resultados."</p>
+                </div> -->
+            </div>
+
+            <!-- Video 2 -->
+            <div class="bg-white rounded-lg overflow-hidden" style="box-shadow: 0 8px 12px rgba(0, 0, 0 , 0.8);">
+                <div class="flex justify-center items-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/K1BADcfHju4?si=QtB0cRyEtTfHTDD-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <!--<div class="p-4">
+                    <h4 class="text-lg font-bold text-gray-800">Testimonio de Cliente 2</h4>
+                    <p class="text-gray-600 mt-2">"El equipo fue increíble y mi recuperación fue rápida."</p>
+                </div> -->
+            </div>
+
+            <!-- Video 3 -->
+            <div class="bg-white rounded-lg overflow-hidden" style="box-shadow: 0 8px 12px rgba(0, 0, 0 , 0.8);">
+                <div class="flex justify-center items-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fnv5WbiBhCw?si=kjEtUURYnyRrZ4M2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+               <!-- <div class="p-4">
+                    <h4 class="text-lg font-bold text-gray-800">Testimonio de Cliente 3</h4>
+                    <p class="text-gray-600 mt-2">"Una experiencia que cambió mi vida. Gracias a todo el equipo."</p>
+                </div> -->
+            </div>
+
+            <!-- Más videos aquí... -->
+
+        </div>
+    </div>
+</section>
+
+</section>
+
+<!-- Blog and Articles Section -->
+<section class="bg-blue-600 py-20" id="blog">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-white font-semibold uppercase">ARTÍCULOS DE INTERÉS</h3>
+            <h2 class="text-4xl font-bold mt-2 text-blue-200">Nuestro Blog</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <div class="bg-white p-6 rounded-lg" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+                <img src="ar1.jpg" alt="Artículo 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-center">Título del Artículo 1</h3>
+                <p class="text-gray-600 mb-4 text-center">Breve descripción del artículo. Aquí puedes colocar un resumen o una introducción sobre el contenido del artículo para captar el interés del lector.</p>
+                <a href="#" class="text-cyan-600 hover:text-cyan-800 font-semibold block text-center">Leer Más</a>
+            </div>
+            <!-- Article 2 -->
+            <div class="bg-white p-6 rounded-lg" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+
+                <img src="ar2.jpg" alt="Artículo 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-center">Título del Artículo 2</h3>
+                <p class="text-gray-600 mb-4 text-center">Breve descripción del artículo. Aquí puedes colocar un resumen o una introducción sobre el contenido del artículo para captar el interés del lector.</p>
+                <a href="#" class="text-cyan-600 hover:text-cyan-800 font-semibold block text-center">Leer Más</a>
+            </div>
+            <!-- Article 3 -->
+            <div class="bg-white p-6 rounded-lg" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+                <img src="ar3.jpg" alt="Artículo 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-center">Título del Artículo 3</h3>
+                <p class="text-gray-600 mb-4 text-center">Breve descripción del artículo. Aquí puedes colocar un resumen o una introducción sobre el contenido del artículo para captar el interés del lector.</p>
+                <a href="#" class="text-cyan-600 hover:text-cyan-800 font-semibold block text-center">Leer Más</a>
+            </div>
+        </div>
+        <!-- Botón de Ver Todos los Artículos -->
+        <div class="text-center mt-12">
+            <a href="#"  class="inline-block bg-gradient-to-r from-blue-700 to-blue-900 text-white text-lg font-semibold px-12 py-4 rounded-full hover:scale-105 hover:shadow-2xl transition-transform" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+      Ver Todos los Artículos</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="bg-white py-20" id="contact" style="background-image: url('rr.jpg'); "> 
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-cyan-500 font-semibold uppercase">Contáctanos</h3>
+            <h2 class="text-4xl font-bold mt-2 text-gray-800">Estamos Aquí para Ayudarte</h2>
+            <p class="text-gray-600 mt-4">Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+        </div>
+
+
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Sección de Imagen -->
+<!-- Contenedor de la imagen con texto -->
+<div class="relative p-8 rounded-lg flex justify-center items-center">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Contáctanos</h2>
+        <p class="text-lg mb-12">Síguenos en nuestras redes sociales o llámanos</p>
+
+        <!-- Redes Sociales -->
+        <div class="flex justify-center space-x-12">
+            <!-- Facebook -->
+            <a href="#" class="text-blue-600 text-6xl hover:text-blue-800 transform hover:scale-110 transition duration-300">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="#" class="text-blue-400 text-6xl hover:text-blue-600 transform hover:scale-110 transition duration-300">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="text-pink-500 text-6xl hover:text-pink-700 transform hover:scale-110 transition duration-300">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="#" class="text-blue-500 text-6xl hover:text-blue-700 transform hover:scale-110 transition duration-300">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <!-- Sección de Teléfonos y WhatsApp -->
+        <div class="mt-12">
+            <p class="text-lg mb-8">O contáctanos por teléfono o WhatsApp</p>
+            <div class="flex justify-center space-x-12">
+                <!-- Teléfono -->
+                <a href="tel:+123456789" class="text-green-500 text-6xl hover:text-green-700 transform hover:scale-110 transition duration-300">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/123456789" target="_blank" class="text-green-500 text-6xl hover:text-green-700 transform hover:scale-110 transition duration-300">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Información de contacto adicional -->
+        <div class="mt-12">
+            <p class="text-xl">O envíanos un correo a:</p>
+            <a href="mailto:contacto@ejemplo.com" class="text-2xl text-gray-700 underline hover:text-gray-900">contacto@ejemplo.com</a>
+        </div>
+    </div>
+</div>
+
+                <!-- Formulario de Contacto -->
+                <div class="p-8 rounded-lg shadow-lg bg-blue-950 ">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-6">Envíanos un Mensaje</h3>
+                    <form action="#" method="post">
+                        <div class="mb-4">
+                            <label for="nombre" class="block text-blue-200 font-semibold mb-2">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border border-blue-400 rounded-lg focus:outline-none focus:border-green-800 text-gray-900" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-blue-200 font-semibold mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-blue-400 rounded-lg focus:outline-none focus:border-green-800 text-gray-900" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensaje" class="block text-blue-200 font-semibold mb-2">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-2 border border-blue-400 rounded-lg focus:outline-none focus:border-green-800 text-gray-900" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3  bg-gradient-to-r from-blue-600 to-blue-800 text-white text-lg font-semibold px-12 py-4 rounded-full hover:scale-105 transition-transform"style="box-shadow: 0 8px 12px rgba(0, 43, 149 , 0.8);">Enviar Mensaje</button> 
+                    </form>
+
+    </a>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Agrega el enlace a Font Awesome para los iconos -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- FAQ Section -->
+<!--  <section class="py-10 bg-white" style="background: rgba(255, 255, 255, 0.5) url('intra.jpg'); background-blend-mode: overlay;background-repeat: no-repeat; background-position: center; background-size: cover;">--> 
+<section class="py-10 bg-white" >
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Preguntas Frecuentes</h2>
+        <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105" >
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq1')">
+                    ¿Qué es la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq1" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        La ozonoterapia es un tratamiento alternativo que utiliza ozono médico para mejorar la oxigenación y activar el sistema inmunológico del cuerpo. Este enfoque innovador ofrece múltiples beneficios...
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105" >
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq2')">
+                    ¿Cuáles son los beneficios de la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq2" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Los beneficios de la ozonoterapia incluyen la reducción del dolor y la inflamación, la mejora de la oxigenación de los tejidos, el refuerzo del sistema inmunológico y la ayuda en el tratamiento de enfermedades autoinmunes y degenerativas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105" >
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq3')">
+                    ¿Es segura la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq3" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Sí, la ozonoterapia es generalmente segura cuando es realizada por un profesional capacitado. Los efectos secundarios son raros y pueden incluir un ligero malestar o fatiga temporal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105" >
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq4')">
+                    ¿Tiene desvetajas o efectos secundarios?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq4" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Sí, la ozonoterapia es generalmente segura cuando es realizada por un profesional capacitado. Los efectos secundarios son raros y pueden incluir un ligero malestar o fatiga temporal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more FAQs as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript para el toggle -->
+<script>
+function toggleFAQ(id) {
+    var content = document.getElementById(id);
+    var icon = content.previousElementSibling.querySelector('svg');
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.setAttribute('d', 'M19 15l-7-7-7 7');
+    } else {
+        content.classList.add('hidden');
+        icon.setAttribute('d', 'M19 9l-7 7-7-7');
+    }
+}
+</script>
+
+
+
+
+<!-- Footer Section -->
+<footer class="bg-blue-900 text-white py-10">
+  <div class="container mx-auto px-4">
+    
+
+    <!-- Segunda fila con columnas de enlaces y suscripción -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Columna Logo e Iconos (anteriormente "Sobre Nosotros") -->
+      <div class="flex flex-col items-center md:items-center md:justify-center">
+  <img src="mr2.png" alt="Doclab Logo" class="h-36 mb-4">
+  <div class="flex space-x-4 justify-center">
+    <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+      <i class="fab fa-facebook-f"></i>
+      <span class="sr-only">Facebook</span>
+    </a>
+    <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+      <i class="fab fa-twitter"></i>
+      <span class="sr-only">Twitter</span>
+    </a>
+    <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+      <i class="fab fa-instagram"></i>
+      <span class="sr-only">Instagram</span>
+    </a>
+    <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+      <i class="fab fa-linkedin-in"></i>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </div>
+</div>
+
+
+      <!-- Columna Servicios -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="#" class="hover:text-white">Condiciones</a></li>
+          <li><a href="#" class="hover:text-white">Listado</a></li>
+          <li><a href="#" class="hover:text-white">Cómo funciona</a></li>
+          <li><a href="#" class="hover:text-white">Lo que ofrecemos</a></li>
+          <li><a href="#" class="hover:text-white">Últimas noticias</a></li>
+          <li><a href="#" class="hover:text-white">Contáctenos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Enlaces útiles -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Enlaces útiles</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="#" class="hover:text-white">Condiciones</a></li>
+          <li><a href="#" class="hover:text-white">Condiciones de uso</a></li>
+          <li><a href="#" class="hover:text-white">Nuestros servicios</a></li>
+          <li><a href="#" class="hover:text-white">Únete como Doctor</a></li>
+          <li><a href="#" class="hover:text-white">Lista de nuevos invitados</a></li>
+          <li><a href="#" class="hover:text-white">La lista del equipo</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Suscribir -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Suscribir</h3>
+        <div class="flex mb-4">
+          <input type="email" placeholder="Correo electrónico" class="w-full px-3 py-2 border border-gray-400 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-lg">Suscribir</button>
+        </div>
+        <p class="text-sm text-gray-300">Recibe las últimas actualizaciones por correo electrónico. Puedes cancelar tu suscripción en cualquier momento.</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="p-4 rounded-lg shadow-lg text-center text-white  bg-gradient-to-r from-blue-600 to-blue-700 font-semibold">
+        <p>&copy; 2024 IgarSoft. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Agregar el enlace al script de FontAwesome para que los iconos se vean -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+
+
+
+
+    <script>
+        // JavaScript para la funcionalidad del menú móvil
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
