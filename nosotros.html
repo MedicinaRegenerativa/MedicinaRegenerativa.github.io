@@ -24,29 +24,30 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <nav class="bg-blue-900 shadow-lg">
+    <!-- Navbar -->
+<nav class="bg-blue-900 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center space-x-4">
-            <a href="#" class="flex items-center py-5 px-2 text-white">
+            <a href="#" class="flex items-center py-4 px-2 text-white">
                 <!-- Imagen en lugar del SVG -->
-                <img src="logoo.png" alt="Logo Clínica Regenerativa" class="h-12 w-auto mr-2">
+                <img src="mr2.png" alt="Logo Clínica Regenerativa" class="h-12 w-auto mr-2">
                 <!--<span class="font-bold text-xl">Clínica Regenerativa</span>-->
             </a>
         </div>
 
         <!-- Primary Nav centrado -->
         <div class="hidden md:flex items-center space-x-1 flex-grow justify-center">
-            <a href="#regeneraaa.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Inicio</a>
-            <a href="#services" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Servicios</a>
-            <a href="#about" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Nosotros</a>
+            <a href="index.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Home</a>
+            <a href="index.html#services" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Servicios</a>
+            <a href="nosotros.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Nosotros</a>
             <a href="#contact" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Contacto</a>
-            <a href="#products" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Tienda Virutal</a>
+            <a href="TIENDA.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Tienda Virutal</a>
         </div>
 
         <!-- Secondary Nav -->
         <div class="hidden md:flex items-center space-x-1">
-            <a href="#appointment" class="py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold px-12 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+            <a href="#appointment" class=" bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold px-12 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
         </div>
 
 
@@ -62,11 +63,11 @@
 
     <!-- Menú Móvil -->
     <div class="mobile-menu hidden md:hidden bg-blue-900  text-center">
-        <a href="#" class="block py-2 px-4 text-white hover:bg-blue-600">Inicio</a>
-        <a href="#services" class="block py-2 px-4 text-white hover:bg-blue-600">Servicios</a>
-        <a href="#team" class="block py-2 px-4 text-white hover:bg-blue-600">Equipo</a>
+        <a href="index.html" class="block py-2 px-4 text-white hover:bg-blue-600">Inicio</a>
+        <a href="index.html#services" class="block py-2 px-4 text-white hover:bg-blue-600">Servicios</a>
+        <a href="nosotros.html" class="block py-2 px-4 text-white hover:bg-blue-600">Nosotros</a>
         <a href="#contact" class="block py-2 px-4 text-white hover:bg-blue-600">Contacto</a>
-        <a href="#appointment" class="block py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700  text-white text-lg font-semibold px-12 py-4  shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+        <a href="index.html" class="block py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700  text-white text-lg font-semibold px-12 py-4  shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
     </div>
 </nav>
 
@@ -82,7 +83,7 @@
         });
     </script>
 
-<section class="relative overflow-hidden px-4 py-20 bg-cover bg-center" style="background-image: url('nosnos.png');">
+<section class="relative overflow-hidden px-4 py-28 bg-cover bg-center" style="background-image: url('nosnos.png');">
     <!-- Capa de overlay -->
     <div class="absolute inset-0 bg-black opacity-50"></div>
     
@@ -550,7 +551,6 @@ function toggleFAQ(id) {
 
 
 
-
 <!-- Footer Section -->
 <footer class="bg-blue-900 text-white py-10">
   <div class="container mx-auto px-4">
@@ -559,27 +559,28 @@ function toggleFAQ(id) {
     <!-- Segunda fila con columnas de enlaces y suscripción -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
       <!-- Columna Logo e Iconos (anteriormente "Sobre Nosotros") -->
-      <div class="flex flex-col items-center md:items-start">
-        <img src="logob.png" alt="Doclab Logo" class="h-36 mb-4">
-        <div class="flex space-x-4">
-          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
-            <i class="fab fa-facebook-f"></i>
-            <span class="sr-only">Facebook</span>
-          </a>
-          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
-            <i class="fab fa-twitter"></i>
-            <span class="sr-only">Twitter</span>
-          </a>
-          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
-            <i class="fab fa-instagram"></i>
-            <span class="sr-only">Instagram</span>
-          </a>
-          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
-            <i class="fab fa-linkedin-in"></i>
-            <span class="sr-only">LinkedIn</span>
-          </a>
-        </div>
-      </div>
+      <div class="flex flex-col items-center md:items-center md:justify-center">
+  <img src="mr2.png" alt="Doclab Logo" class="h-36 mb-4">
+  <div class="flex space-x-4 justify-center">
+    <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+      <i class="fab fa-facebook-f"></i>
+      <span class="sr-only">Facebook</span>
+    </a>
+    <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+      <i class="fab fa-twitter"></i>
+      <span class="sr-only">Twitter</span>
+    </a>
+    <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+      <i class="fab fa-instagram"></i>
+      <span class="sr-only">Instagram</span>
+    </a>
+    <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+      <i class="fab fa-linkedin-in"></i>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </div>
+</div>
+
 
       <!-- Columna Servicios -->
       <div>
