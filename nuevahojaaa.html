@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Medicina Regenerativa</title>
+    <!-- Importación de Tailwind CSS desde CDN -->
+
+    <!-- Importación de la fuente "Poppins" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Importación de Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+       
+
+    <style>
+        /* Aplicar la fuente "Poppins" a todo el documento */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+<nav class="bg-blue-900 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+            <a href="#" class="flex items-center py-5 px-2 text-white">
+                <!-- Imagen en lugar del SVG -->
+                <img src="logoo.png" alt="Logo Clínica Regenerativa" class="h-12 w-auto mr-2">
+                <!--<span class="font-bold text-xl">Clínica Regenerativa</span>-->
+            </a>
+        </div>
+
+        <!-- Primary Nav centrado -->
+        <div class="hidden md:flex items-center space-x-1 flex-grow justify-center">
+            <a href="#regeneraaa.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Inicio</a>
+            <a href="#services" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Servicios</a>
+            <a href="#about" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Nosotros</a>
+            <a href="#contact" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Contacto</a>
+            <a href="#products" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Tienda Virutal</a>
+        </div>
+
+        <!-- Secondary Nav -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="#appointment" class="py-2 px-4 bg-gradient-to-r from-cyan-300 to-cyan-500 text-white text-lg font-semibold px-12 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+        </div>
+
+
+        <!-- Mobile Button -->
+        <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+                <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu hidden md:hidden bg-cyan-600 text-center">
+        <a href="#" class="block py-2 px-4 text-white hover:bg-cyan-500">Inicio</a>
+        <a href="#services" class="block py-2 px-4 text-white hover:bg-cyan-500">Servicios</a>
+        <a href="#team" class="block py-2 px-4 text-white hover:bg-cyan-500">Equipo</a>
+        <a href="#contact" class="block py-2 px-4 text-white hover:bg-cyan-500">Contacto</a>
+        <a href="#appointment" class="block py-2 px-4 bg-gradient-to-r from-cyan-300 to-cyan-500 text-white text-lg font-semibold px-12 py-4  shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+    </div>
+</nav>
+
+    <script>
+        // JavaScript para la funcionalidad del menú móvil
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

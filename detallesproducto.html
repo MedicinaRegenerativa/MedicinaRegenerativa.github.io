@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Medicina Regenerativa</title>
+    <!-- Importación de Tailwind CSS desde CDN -->
+
+    <!-- Importación de la fuente "Poppins" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Importación de Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+       
+
+    <style>
+        /* Aplicar la fuente "Poppins" a todo el documento */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+<nav class="bg-blue-900 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+            <a href="#" class="flex items-center py-5 px-2 text-white">
+                <!-- Imagen en lugar del SVG -->
+                <img src="logoo.png" alt="Logo Clínica Regenerativa" class="h-12 w-auto mr-2">
+                <!--<span class="font-bold text-xl">Clínica Regenerativa</span>-->
+            </a>
+        </div>
+
+        <!-- Primary Nav centrado -->
+        <div class="hidden md:flex items-center space-x-1 flex-grow justify-center">
+            <a href="#regeneraaa.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Inicio</a>
+            <a href="#services" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Servicios</a>
+            <a href="#about" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Nosotros</a>
+            <a href="#contact" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Contacto</a>
+            <a href="#products" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Tienda Virutal</a>
+        </div>
+
+        <!-- Secondary Nav -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="#appointment" class="py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold px-12 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+        </div>
+
+
+        <!-- Mobile Button -->
+        <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+                <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu hidden md:hidden bg-blue-900  text-center">
+        <a href="#" class="block py-2 px-4 text-white hover:bg-blue-600">Inicio</a>
+        <a href="#services" class="block py-2 px-4 text-white hover:bg-blue-600">Servicios</a>
+        <a href="#team" class="block py-2 px-4 text-white hover:bg-blue-600">Equipo</a>
+        <a href="#contact" class="block py-2 px-4 text-white hover:bg-blue-600">Contacto</a>
+        <a href="#appointment" class="block py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700  text-white text-lg font-semibold px-12 py-4  shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+    </div>
+</nav>
+
+
+    <!-- Contenedor principal -->
+<section class="bg-white mx-0 md:mx-16 mt-4">
+    <div class="bg-white p-8 rounded-lg ">
+        <div class="flex flex-col md:flex-row">
+            <!-- Imagen del producto -->
+            <div class="md:w-1/2">
+                <img src="ozzz.jpg" alt="Crema Hidratante" class="w-full h-96 object-cover rounded-lg">
+            </div>
+            <!-- Información del producto -->
+            <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
+                <h1 class="text-3xl font-bold text-blue-800 mb-4">Crema Hidratante</h1>
+                <div class="flex items-center mb-4">
+                    <!-- Valoración con estrellas -->
+                    <span class="text-yellow-500 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </span>
+                    <span class="ml-2 text-gray-600">(150 opiniones)</span>
+                </div>
+                <p class="text-xl text-gray-700 mb-4">Esta crema hidratante está diseñada para todo tipo de piel y deja la piel fresca, hidratada y suave durante todo el día.</p>
+                <p class="text-2xl font-bold text-gray-800 mb-6">$19.99</p>
+                <a href="#" class="inline-block py-3 px-6 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Añadir al carrito</a>
+            </div>
+
+        </div>
+
+        <!-- Información adicional del producto -->
+        <h2 class="text-2xl font-semibold text-blue-800 mb-4 text-center mt-12">Información del Producto</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-800">
+                        <th class="py-3 px-4 text-left border-b">Categoría</th>
+                        <th class="py-3 px-4 text-left border-b">Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-3 px-4 border-b font-semibold text-gray-800">Ingredientes</td>
+                        <td class="py-3 px-4 border-b text-gray-700">Agua, Glicerina, Ácido Hialurónico, Extracto de Aloe Vera, Vitamina E, Aceite de Jojoba, Fragancia.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b font-semibold text-gray-800">Instrucciones de Uso</td>
+                        <td class="py-3 px-4 border-b text-gray-700">Aplicar una cantidad adecuada sobre la piel limpia y seca dos veces al día. Masajear suavemente hasta que se absorba completamente.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b font-semibold text-gray-800">Advertencias</td>
+                        <td class="py-3 px-4 border-b text-gray-700">Solo para uso externo. Evitar el contacto con los ojos. En caso de irritación, interrumpir el uso y consultar con un médico.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b font-semibold text-gray-800">Condiciones de Almacenamiento</td>
+                        <td class="py-3 px-4 border-b text-gray-700">Mantener en un lugar fresco y seco, alejado de la luz directa del sol y fuera del alcance de los niños.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b font-semibold text-gray-800">Fecha de Caducidad</td>
+                        <td class="py-3 px-4 border-b text-gray-700">Válido hasta 12/2025. Revisar el envase antes de su uso.</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 border-b font-semibold text-gray-800">Fabricante</td>
+                        <td class="py-3 px-4 border-b text-gray-700">Cosméticos Naturales S.A. de C.V.<br>Calle Falsa 123, Ciudad Inventada, México.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Sección de reseñas -->
+<section class="mt-12 mx-4 md:mx-16 mb-4">
+    <h2 class="text-2xl font-semibold text-blue-800 mb-6 text-center">Reseñas de Clientes</h2>
+    <div class="space-y-6">
+      <!-- Reseña 1 -->
+<div class="bg-gray-50 p-6 rounded-lg shadow flex items-start transition-transform duration-300 hover:scale-105">
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Logo de Facebook" class="w-12 h-12 rounded-full mr-4">
+    <div class="flex-1">
+        <div class="flex items-center mb-2">
+            <span class="text-yellow-500 text-lg">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </span>
+        </div>
+        <div class=" text-gray-600">
+            <span class="font-semibold">Ana Pérez</span> el 12/10/2024
+        </div>
+        <p class="text-gray-700 mt-1">Me encantó esta crema, deja mi piel suave y la textura es perfecta. ¡Totalmente recomendada!</p>
+    </div>
+</div>
+
+
+        <!-- Reseña 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow flex items-start transition-transform duration-300 hover:scale-105">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Logo de Facebook" class="w-12 h-12 rounded-full mr-4">
+
+    <div class="flex-1">
+        <div class="flex items-center mb-2">
+                    <span class="text-yellow-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </span>
+                </div>
+                <div class=" text-gray-600">
+                    <span class="font-semibold">Juan López</span> el 10/10/2024
+                </div>
+                <p class="text-gray-700">Buena crema, aunque no me duró tanto la hidratación como esperaba. Podría mejorar, pero en general está bien.</p>
+            </div>
+        </div>
+
+        <!-- Reseña 3 -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow flex items-start transition-transform duration-300 hover:scale-105">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Logo de Instagram" class="w-12 h-12 rounded-full mr-4">
+            <div class="flex-1">
+                <div class="flex items-center mb-2">
+                    <span class="text-yellow-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </span>
+                    </div>
+                    <div class=" text-gray-600">
+                        <span class="font-semibold">María Gómez</span> el 08/10/2024</span>
+                </div>
+                <p class="text-gray-700">Hidrata muy bien, pero no me gusta mucho el aroma. En cuanto a calidad, sí es muy buena.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner de Ofertas -->
+<section class="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 text-white py-4 ">
+    <div class="max-w-7xl mx-auto px-4 text-center mt-12">
+        <h2 class="text-2xl md:text-3xl font-bold">¡Grandes Ofertas en Tratamientos!</h2>
+        <p class="mt-2 text-lg md:text-xl">Aprovecha descuentos especiales en la compra de un tratamiento. ¡Haz tu pedido hoy mismo!</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-4 mb-10">
+            <!-- Contenedor de la imagen y el botón -->
+            <div class="relative">
+                <img src="kits.png" alt="Ofertas" class="rounded-lg shadow-lg">
+                <a href="#" class="absolute inset-0 flex items-center justify-center">
+                    <button class="text-white text-lg font-bold py-2 px-4 bg-blue-600 rounded hover:bg-blue-700 transition duration-300 border-2 border-white">
+                        Ver Oferta
+                    </button>
+                </a>
+            </div>
+            <div class="relative">
+                <img src="Exfoliantes.png" alt="Ofertas" class="rounded-lg shadow-lg">
+                <a href="#" class="absolute inset-0 flex items-center justify-center">
+                    <button class="text-white text-lg font-bold py-2 px-4 bg-red-600 rounded hover:bg-red-700 transition duration-300 border-2 border-white">
+                        Ver Oferta
+                    </button>
+                </a>
+            </div>
+            <div class="relative">
+                <img src="crema.png" alt="Ofertas" class="rounded-lg shadow-lg">
+                <a href="#" class="absolute inset-0 flex items-center justify-center">
+                    <button class="text-white text-lg font-bold py-2 px-4 bg-pink-600 rounded hover:bg-pink-700 transition duration-300 border-2 border-white">
+                        Ver Oferta
+                    </button>
+                </a>
+            </div>
+            <!-- Puedes añadir más imágenes aquí -->
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bg-white mx-4 mt-12">
+    <div class="container mx-auto">
+
+        <h2 class="text-4xl font-bold text-center mb-6 text-blue-950 w-full">Tal vez también te interese</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Certificación 1 -->
+            <div class="bg-white rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+                <div class="text-center p-2">
+                    <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+                    <p class="text-gray-600">$19.99</p>
+                    <a href="#" class="mt-2 mb-2 inline-block py-2 px-4 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500 transition duration-300">Ver Producto</a>
+                </div>
+            </div>
+            <!-- Certificación 2 -->
+            <div class="bg-white rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="ozzz.jpg" alt="Crema 2" class="w-full h-72 object-cover rounded-t-lg">
+                <div class="text-center p-2">
+                    <h3 class="text-xl font-semibold text-blue-800">Crema Antiedad</h3>
+                    <p class="text-gray-600">$29.99</p>
+                    <a href="#" class="mt-2 mb-2 inline-block py-2 px-4 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500 transition duration-300">Ver Producto</a>
+                </div>
+            </div>
+            <!-- Certificación 3 -->
+            <div class="bg-white rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="ozzz.jpg" alt="Crema 3" class="w-full h-72 object-cover rounded-t-lg">
+                <div class="text-center p-2">
+                    <h3 class="text-xl font-semibold text-blue-800">Crema Solar</h3>
+                    <p class="text-gray-600">$24.99</p>
+                    <a href="#" class="mt-2 mb-2 inline-block py-2 px-4 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500 transition duration-300">Ver Producto</a>
+                </div>
+            </div>
+            <!-- Certificación 4 -->
+            <div class="bg-white rounded-lg shadow-lg flex flex-col items-center text-center">
+                <img src="ozzz.jpg" alt="Crema 4" class="w-full h-72 object-cover rounded-t-lg">
+                <div class="text-center p-2">
+                    <h3 class="text-xl font-semibold text-blue-800">Crema Para Piel Sensible</h3>
+                    <p class="text-gray-600">$22.99</p>
+                    <a href="#" class="mt-2 mb-2 inline-block py-2 px-4 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-500 transition duration-300">Ver Producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sección de Preguntas Frecuentes -->
+<section class="mt-12 mx-16 mb-20">
+
+     <h2 class="text-4xl font-bold text-center mb-6 text-blue-950 w-full">Preguntas Frecuentes</h2>
+    <div class="space-y-4">
+        <!-- Pregunta 1 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+            <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ('faq1')">
+                <span class="text-lg font-semibold">¿Cuál es la política de devoluciones?</span>
+                <span class="text-blue-600">
+                    <i id="faq1-icon" class="fas fa-plus"></i>
+                </span>
+            </button>
+            <div id="faq1" class="hidden mt-2 text-gray-700">
+                Nuestra política de devoluciones permite devoluciones dentro de los 30 días posteriores a la compra, siempre y cuando el producto esté en su estado original.
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+            <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ('faq2')">
+                <span class="text-lg font-semibold">¿Los productos son cruelty-free?</span>
+                <span class="text-blue-600">
+                    <i id="faq2-icon" class="fas fa-plus"></i>
+                </span>
+            </button>
+            <div id="faq2" class="hidden mt-2 text-gray-700">
+                Sí, todos nuestros productos son cruelty-free y no realizamos pruebas en animales.
+            </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+            <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ('faq3')">
+                <span class="text-lg font-semibold">¿Cómo puedo hacer un seguimiento de mi pedido?</span>
+                <span class="text-blue-600">
+                    <i id="faq3-icon" class="fas fa-plus"></i>
+                </span>
+            </button>
+            <div id="faq3" class="hidden mt-2 text-gray-700">
+                Una vez que tu pedido haya sido enviado, recibirás un correo electrónico con un enlace de seguimiento.
+            </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow">
+            <button class="flex justify-between items-center w-full text-left focus:outline-none" onclick="toggleFAQ('faq4')">
+                <span class="text-lg font-semibold">¿Puedo modificar o cancelar mi pedido?</span>
+                <span class="text-blue-600">
+                    <i id="faq4-icon" class="fas fa-plus"></i>
+                </span>
+            </button>
+            <div id="faq4" class="hidden mt-2 text-gray-700">
+                Sí, puedes modificar o cancelar tu pedido dentro de las 24 horas posteriores a la compra. Después de este período, no podremos realizar cambios.
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-blue-900 text-white py-10">
+  <div class="container mx-auto px-4">
+    
+
+    <!-- Segunda fila con columnas de enlaces y suscripción -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Columna Logo e Iconos (anteriormente "Sobre Nosotros") -->
+      <div class="flex flex-col items-center md:items-start">
+        <img src="logob.png" alt="Doclab Logo" class="h-36 mb-4">
+        <div class="flex space-x-4">
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-facebook-f"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-twitter"></i>
+            <span class="sr-only">Twitter</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-instagram"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-linkedin-in"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna Servicios -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="#" class="hover:text-white">Condiciones</a></li>
+          <li><a href="#" class="hover:text-white">Listado</a></li>
+          <li><a href="#" class="hover:text-white">Cómo funciona</a></li>
+          <li><a href="#" class="hover:text-white">Lo que ofrecemos</a></li>
+          <li><a href="#" class="hover:text-white">Últimas noticias</a></li>
+          <li><a href="#" class="hover:text-white">Contáctenos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Enlaces útiles -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Enlaces útiles</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="#" class="hover:text-white">Condiciones</a></li>
+          <li><a href="#" class="hover:text-white">Condiciones de uso</a></li>
+          <li><a href="#" class="hover:text-white">Nuestros servicios</a></li>
+          <li><a href="#" class="hover:text-white">Únete como Doctor</a></li>
+          <li><a href="#" class="hover:text-white">Lista de nuevos invitados</a></li>
+          <li><a href="#" class="hover:text-white">La lista del equipo</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Suscribir -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Suscribir</h3>
+        <div class="flex mb-4">
+          <input type="email" placeholder="Correo electrónico" class="w-full px-3 py-2 border border-gray-400 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-lg">Suscribir</button>
+        </div>
+        <p class="text-sm text-gray-300">Recibe las últimas actualizaciones por correo electrónico. Puedes cancelar tu suscripción en cualquier momento.</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="p-4 rounded-lg shadow-lg text-center text-white  bg-gradient-to-r from-blue-600 to-blue-700 font-semibold">
+        <p>&copy; 2024 IgarSoft. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script>
+
+    // JavaScript para la funcionalidad del menú móvil
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    // JavaScript para la funcionalidad de las pregfuntas f
+    function toggleFAQ(faqId) {
+        const faqElement = document.getElementById(faqId);
+        const iconElement = document.getElementById(faqId + '-icon');
+
+        if (faqElement.classList.contains('hidden')) {
+            faqElement.classList.remove('hidden');
+            iconElement.classList.remove('fa-plus');
+            iconElement.classList.add('fa-minus');
+        } else {
+            faqElement.classList.add('hidden');
+            iconElement.classList.remove('fa-minus');
+            iconElement.classList.add('fa-plus');
+        }
+    }
+</script>
+
+</body>
+</html>

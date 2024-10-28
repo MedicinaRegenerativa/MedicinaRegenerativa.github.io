@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Modo Claro y Oscuro</title>
+    <!-- Enlace a Tailwind CSS para los estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados para transiciones suaves */
+        body {
+            transition: background-color 0.5s, color 0.5s; /* Suaviza el cambio de color de fondo y texto */
+        }
+    </style>
+</head>
+<body class="bg-white text-black"> <!-- Modo claro inicial -->
+    <!-- Encabezado de la página -->
+    <header class="w-full py-4 shadow-lg"> <!-- Contenedor del encabezado con sombra -->
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center"> <!-- Contenido centrado con espaciado -->
+            <div class="text-2xl font-bold">Ejemplo</div> <!-- Título de la página -->
+            <!-- Botón para alternar entre modos claro y oscuro -->
+            <button id="toggleDarkMode" class="px-4 py-2 bg-teal-500 text-black rounded-lg hover:bg-teal-600">🌙 Modo Oscuro</button>
+        </div>
+    </header>
+
+    <!-- Sección principal del contenido -->
+    <main class="py-20"> <!-- Espaciado vertical -->
+        <div class="max-w-7xl mx-auto px-6 text-center"> <!-- Contenedor centrado -->
+            <h2 class="text-4xl font-bold mb-12">Contenido Aquí</h2> <!-- Título de la sección -->
+            <p class="text-lg">Agrega tus secciones y contenido aquí.</p> <!-- Texto de ejemplo -->
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="py-6 text-center"> <!-- Espaciado vertical y centrado -->
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p> <!-- Texto del pie de página -->
+    </footer>
+
+    <!-- JavaScript para manejar el cambio entre modos -->
+    <script>
+        // Obtener referencia al botón y al body
+        const toggleDarkMode = document.getElementById('toggleDarkMode'); // Botón para alternar modos
+        const body = document.body; // Referencia al cuerpo del documento
+
+        // Añadir un evento de clic al botón
+        toggleDarkMode.addEventListener('click', () => {
+            // Comprobar si el body tiene la clase 'bg-white' (modo claro)
+            if (body.classList.contains('bg-white')) {
+                // Cambiar a modo oscuro
+                body.classList.remove('bg-white', 'text-black'); // Remover clases de modo claro
+                body.classList.add('bg-gray-900', 'text-white'); // Añadir clases de modo oscuro
+
+                // Cambiar el estilo del botón para modo oscuro
+                toggleDarkMode.classList.remove('text-black', 'bg-teal-500', 'hover:bg-teal-600'); // Remover estilos claros
+                toggleDarkMode.classList.add('text-white', 'bg-teal-700', 'hover:bg-teal-800'); // Añadir estilos oscuros
+            } else {
+                // Cambiar a modo claro
+                body.classList.remove('bg-gray-900', 'text-white'); // Remover clases de modo oscuro
+                body.classList.add('bg-white', 'text-black'); // Añadir clases de modo claro
+
+                // Cambiar el estilo del botón para modo claro
+                toggleDarkMode.classList.remove('text-white', 'bg-teal-700', 'hover:bg-teal-800'); // Remover estilos oscuros
+                toggleDarkMode.classList.add('text-black', 'bg-teal-500', 'hover:bg-teal-600'); // Añadir estilos claros
+            }
+        });
+    </script>
+</body>
+</html>

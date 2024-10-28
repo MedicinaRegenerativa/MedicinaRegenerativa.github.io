@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Medicina Regenerativa</title>
+    <!-- Importación de Tailwind CSS desde CDN -->
+
+    <!-- Importación de la fuente "Poppins" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Importación de Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+       
+
+    <style>
+        /* Aplicar la fuente "Poppins" a todo el documento */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+<nav class="bg-blue-900 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+            <a href="#" class="flex items-center py-5 px-2 text-white">
+                <!-- Imagen en lugar del SVG -->
+                <img src="logoo.png" alt="Logo Clínica Regenerativa" class="h-12 w-auto mr-2">
+                <!--<span class="font-bold text-xl">Clínica Regenerativa</span>-->
+            </a>
+        </div>
+
+        <!-- Primary Nav centrado -->
+        <div class="hidden md:flex items-center space-x-1 flex-grow justify-center">
+            <a href="#regeneraaa.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Inicio</a>
+            <a href="#services" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Servicios</a>
+            <a href="#about" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Nosotros</a>
+            <a href="#contact" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Contacto</a>
+            <a href="#products" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Tienda Virutal</a>
+        </div>
+
+        <!-- Secondary Nav -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="#appointment" class="py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold px-12 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+        </div>
+
+
+        <!-- Mobile Button -->
+        <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+                <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu hidden md:hidden bg-blue-900  text-center">
+        <a href="#" class="block py-2 px-4 text-white hover:bg-blue-600">Inicio</a>
+        <a href="#services" class="block py-2 px-4 text-white hover:bg-blue-600">Servicios</a>
+        <a href="#team" class="block py-2 px-4 text-white hover:bg-blue-600">Equipo</a>
+        <a href="#contact" class="block py-2 px-4 text-white hover:bg-blue-600">Contacto</a>
+        <a href="#appointment" class="block py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700  text-white text-lg font-semibold px-12 py-4  shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+    </div>
+</nav>
+
+
+<!-- Sección Hero -->
+<section class="relative w-full h-[90vh] overflow-hidden ">
+    <div id="carousel" class="w-full h-full  ">
+        <picture>
+            <source media="(max-width: 640px)" srcset="ozzz.jpg">
+            <source media="(min-width: 641px)" srcset="her1.jpg">
+            <img src="her1.jpg" alt="Imagen 1" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+        </picture>
+        <picture>
+            <source media="(max-width: 640px)" srcset="aceite.png">
+            <source media="(min-width: 641px)" srcset="her2.jpg">
+            <img src="her2.jpg" alt="Imagen 2" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+        </picture>
+        <picture>
+            <source media="(max-width: 640px)" srcset="crema.png">
+            <source media="(min-width: 641px)" srcset="aceites.png">
+            <img src="her3.jpg" alt="Imagen 3" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+        </picture>
+    </div>
+</section>
+
+
+  
+<!-- Sección de Ofertas Especiales -->
+<section class="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 text-white py-4">
+    <div class="max-w-7xl mx-auto px-4">
+<div class="max-w-7xl mx-auto px-4 text-center mb-10">
+      <h2 class="text-2xl md:text-3xl font-bold">¡Grandes Ofertas en Tratamientos!</h2>
+      <p class="mt-2 text-lg md:text-xl">Aprovecha descuentos especiales en la compra de un tratamiento. ¡Haz tu pedido hoy mismo!</p>
+    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+
+            <!-- Oferta 1 -->
+            <div class="flex items-center bg-red-600 text-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+                <img src="jabon-ozosana.jpg" alt="Oferta 2" class="w-1/2 h-48 object-cover transition duration-300">
+                <div class="p-4 w-1/2">
+                    <h3 class="text-xl font-bold">Compra 1 y Lleva el Segundo al 50%</h3>
+                    <p class="mt-2 text-sm">¡No te pierdas esta oferta increíble!</p>
+                    <a href="#oferta2" class="mt-4 inline-block py-2 px-4 bg-white text-red-600 rounded shadow transition-transform duration-300 hover:bg-red-200">Ver Oferta</a>
+                </div>
+                <div class="absolute top-0 right-0 bg-red-400 text-white px-4 py-2 text-xs font-bold rounded-bl-lg">¡Oferta!</div>
+            </div>
+            <!-- Oferta 2 -->
+            <div class="flex items-center bg-green-600 text-white rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+                <img src="jabon.jpg" alt="Oferta 2" class="w-1/2 h-48 object-cover transition duration-300">
+                <div class="p-4 w-1/2">
+                    <h3 class="text-xl font-bold">Compra 1 y Lleva el Segundo al 50%</h3>
+                    <p class="mt-2 text-sm">¡No te pierdas esta oferta increíble!</p>
+                    <a href="#oferta2" class="mt-4 inline-block py-2 px-4 bg-white text-green-600 rounded shadow transition-transform duration-300 hover:bg-red-200">Ver Oferta</a>
+                </div>
+                <div class="absolute top-0 right-0 bg-green-400 text-white px-4 py-2 text-xs font-bold rounded-bl-lg">¡Oferta!</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-12 md:py-16 bg-white">
+  <div class="container mx-auto ">
+    <h2 class="text-4xl font-bold text-center mb-6 text-blue-950">Productos que van llegando!</h2>
+    <div class="relative overflow-hidden">
+      <div class="flex animate-marquee mb-4">
+        
+        <!-- Certificación 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-80 flex-shrink-0 mr-6">
+          <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+            <div class="flex items-center justify-center py-2">
+                <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+            </div>
+            <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+        </div>
+
+        <!-- Certificación 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-80 flex-shrink-0 mr-6">
+          <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+            <div class="flex items-center justify-center py-2">
+                <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+            </div>
+            <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+        </div>
+
+        <!-- Certificación 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-80 flex-shrink-0 mr-6">
+          <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+            <div class="flex items-center justify-center py-2">
+                <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+            </div>
+            <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+        </div>
+
+        <!-- Certificación 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-80 flex-shrink-0 mr-6">
+          <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+            <div class="flex items-center justify-center py-2">
+                <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+            </div>
+            <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+        </div>
+
+        <!-- Certificación 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-80 flex-shrink-0 mr-6">
+          <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+            <div class="flex items-center justify-center py-2">
+                <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+            </div>
+            <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+        </div>
+
+        <!-- Certificación 6 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-80 flex-shrink-0 mr-6">
+          <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+            <div class="flex items-center justify-center py-2">
+                <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+            </div>
+            <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+        </div>
+
+        <!-- Repetir las cards para el efecto de carrusel infinito -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-80 flex-shrink-0 mr-6">
+          <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+            <div class="flex items-center justify-center py-2">
+                <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+            </div>
+            <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+        </div>
+
+        <!-- Certificación 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center w-80 flex-shrink-0 mr-6">
+          <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+            <div class="flex items-center justify-center py-2">
+                <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+            </div>
+            <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Duración para pantallas grandes */
+@media (min-width: 768px) { 
+  .animate-marquee {
+    display: flex;
+    animation: marquee 40s linear infinite;
+    width: calc(100% * 2.5);
+  }
+}
+
+/* Duración para pantallas pequeñas */
+@media (max-width: 767px) { 
+  .animate-marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
+    width: calc(100% * 2.5);
+  }
+}
+</style>
+
+<section class="py-12 bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900 text-center">
+    <div class="container mx-auto px-6">
+        <!-- Texto principal del Call to Action -->
+        <h2 class="text-4xl font-extrabold text-white mb-4">¡Levanta tu pedido hoy mismo!</h2>
+        <p class="text-lg text-gray-200 mb-6">
+            Descubre cómo nuestros tratamientos de ozonoterapia pueden mejorar tu salud. Contacta con nosotros para obtener más información.
+        </p>
+
+        <!-- Botón de acción -->
+        <a href="#contacto" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
+            Levanta tu Pedido
+        </a>
+    </div>
+</section>
+
+
+<!-- Sección de Categorías -->
+<section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-6 text-gray-800">Productos Ozonizados</h2>
+        <p class="text-gray-600 text-center mb-10">En Medicina Regenerativa, somos los únicos que contamos con productos ozonizados, los cuales, hiperoxigenan la piel, estimulan metabolismo celular, revitalizando sus funciones.</p>
+
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <!-- Categoría 1 -->
+            <div class="relative bg-cover bg-center h-80 rounded-lg overflow-hidden" style="background-image: url('aceite.png');">
+                <div class="flex items-center justify-center h-full bg-purple-100 bg-opacity-20">
+                    <a href="#categoria1" class="text-white text-lg font-bold py-2 px-4 bg-purple-600 rounded hover:bg-purple-700 transition duration-300">Ver Todo</a>
+                </div>
+            </div>
+            <!-- Categoría 2 -->
+            <div class="relative bg-cover bg-center h-80 rounded-lg overflow-hidden" style="background-image: url('Exfoliantes.png');">
+                <div class="flex items-center justify-center h-full bg-red-100 bg-opacity-20">
+                    <a href="#categoria2" class="text-white text-lg font-bold py-2 px-4 bg-red-600 rounded hover:bg-red-700 transition duration-300">Ver Todo</a>
+                </div>
+            </div>
+            <!-- Categoría 3 -->
+            <div class="relative bg-cover bg-center h-80 rounded-lg overflow-hidden" style="background-image: url('jabon.png');">
+                <div class="flex items-center justify-center h-full bg-blue-100 bg-opacity-20">
+                    <a href="#categoria3" class="text-white text-lg font-bold py-2 px-4 bg-blue-600 rounded hover:bg-blue-700 transition duration-300">Ver Todo</a>
+                </div>
+            </div>
+            <!-- Categoría 4 -->
+            <div class="relative bg-cover bg-center h-80 rounded-lg overflow-hidden" style="background-image: url('crema.png');">
+                <div class="flex items-center justify-center h-full bg-pink-100 bg-opacity-20">
+                    <a href="#categoria4" class="text-white text-lg font-bold py-2 px-4 bg-pink-500 rounded hover:bg-pink-600 transition duration-300">Ver Todo</a>
+                </div>
+            </div>
+            <!-- Categoría 5 -->
+            <div class="relative bg-cover bg-center h-80 rounded-lg overflow-hidden" style="background-image: url('geles.png');">
+                <div class="flex items-center justify-center h-full bg-cyan-100 bg-opacity-20">
+                    <a href="#categoria4" class="text-white text-lg font-bold py-2 px-4 bg-cyan-600 rounded hover:bg-cyan-700 transition duration-300">Ver Todo</a>
+                </div>
+            </div>
+            <!-- Categoría 6 -->
+            <div class="relative bg-cover bg-center h-80 rounded-lg overflow-hidden" style="background-image: url('shampo.png');">
+                <div class="flex items-center justify-center h-full bg-yellow-100 bg-opacity-20">
+                    <a href="#categoria4" class="text-white text-lg font-bold py-2 px-4 bg-yellow-500 rounded hover:bg-yellow-600 transition duration-300">Ver Todo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-12 md:py-16 bg-white mx-4">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-6 text-blue-950 w-full">Productos que no volveran!</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Certificación 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+          <div class="flex items-center justify-center py-2">
+            <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+          </div>
+          <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+      </div>
+
+      <!-- Certificación 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+          <div class="flex items-center justify-center py-2">
+            <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+          </div>
+          <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+      </div>
+
+      <!-- Certificación 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+          <div class="flex items-center justify-center py-2">
+            <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+          </div>
+          <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+      </div>
+
+      <!-- Certificación 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+          <div class="flex items-center justify-center py-2">
+            <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+          </div>
+          <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class=" bg-white mx-4">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-6 text-blue-950 w-full">Otros Productos</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Certificación 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+          <div class="flex items-center justify-center py-2">
+            <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+          </div>
+          <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+      </div>
+
+      <!-- Certificación 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+          <div class="flex items-center justify-center py-2">
+            <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+          </div>
+          <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+      </div>
+
+      <!-- Certificación 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+          <div class="flex items-center justify-center py-2">
+            <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+          </div>
+          <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+      </div>
+
+      <!-- Certificación 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+        <img src="ozzz.jpg" alt="Crema 1" class="w-full h-72 object-cover rounded-t-lg">
+        <div class="p-4 text-center">
+          <h3 class="text-xl font-semibold text-blue-800">Crema Hidratante</h3>
+          <div class="flex items-center justify-center py-2">
+            <p class="text-gray-700 text-2xl font-bold">$19.99</p>
+          </div>
+          <a href="#crema1" class="inline-block py-2 px-4 bg-blue-600 text-white rounded-md shadow transition duration-300 hover:bg-blue-500">Ver Producto</a>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+
+
+
+ <!-- Sección Banner Sorprendente -->
+  <section class="relative w-full h-screen bg-blue-900 text-white flex items-center justify-center overflow-hidden"
+    style="background-image: url('bella.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10 text-center p-8">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">¡Descubre el Futuro de la Belleza!</h1>
+      <p class="text-lg md:text-2xl mb-6">Transforma tu rutina de cuidado con nuestros tratamientos de OZONO.</p>
+      <a href="#shop"
+        class="inline-block py-3 px-6 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">Explora Ahora</a>
+    </div>
+  </section>
+
+
+  <!-- Sección de Contacto -->
+<section class="relative py-12 bg-gray-100" style="background-image: url('cuidado.jpg'); background-size: cover; background-position: center;">
+
+
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Realiza tu Pedido</h2>
+    <p class="text-lg mb-6">Completa el siguiente formulario para hacer tu pedido. Nuestro equipo se pondrá en contacto contigo para confirmar los detalles.</p>
+    
+    <!-- Formulario de Pedido -->
+    <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg mx-auto max-w-4xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <!-- Información Personal -->
+        <div>
+          <label for="name" class="block text-left text-gray-700 text-sm font-semibold mb-2">Nombre:</label>
+          <input id="name" type="text" name="name" placeholder="Tu Nombre" required
+            class="w-full py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+        </div>
+        
+        <div>
+          <label for="email" class="block text-left text-gray-700 text-sm font-semibold mb-2">Correo Electrónico:</label>
+          <input id="email" type="email" name="email" placeholder="Tu Correo Electrónico" required
+            class="w-full py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+        </div>
+        
+        <div>
+          <label for="phone" class="block text-left text-gray-700 text-sm font-semibold mb-2">Teléfono:</label>
+          <input id="phone" type="tel" name="phone" placeholder="Tu Teléfono" required
+            class="w-full py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+        </div>
+        
+        <div>
+          <label for="delivery" class="block text-left text-gray-700 text-sm font-semibold mb-2">Método de Entrega:</label>
+          <select id="delivery" name="delivery" required
+            class="w-full py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+            <option value="">Selecciona un Método</option>
+            <option value="delivery">Entrega a Domicilio</option>
+            <option value="pickup">Recoger en Tienda</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- Lista de Productos -->
+      <h3 class="text-2xl font-bold mb-4">Lista de Productos</h3>
+      <div id="productList" class="space-y-4">
+        <!-- Producto 1 -->
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <input type="text" name="product_name[]" placeholder="Nombre del Producto" required
+            class="w-full md:w-2/3 py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+          <input type="number" name="quantity[]" placeholder="Cantidad" min="1" required
+            class="w-full md:w-1/6 py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+          <select name="presentation[]" required
+            class="w-full md:w-1/6 py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+            <option value="">Selecciona Presentación</option>
+            <option value="100g">100g</option>
+            <option value="200g">200g</option>
+            <option value="300g">300g</option>
+            <option value="500g">500g</option>
+            <option value="1kg">1kg</option>
+            <!-- Añadir más opciones según las presentaciones disponibles -->
+          </select>
+        </div>
+        <!-- Añadir más productos dinámicamente -->
+      </div>
+      <button type="button" id="addProduct" class="mt-4 py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition duration-300">Añadir otro producto</button>
+
+      <div class="mt-6 mb-4">
+        <label for="comments" class="block text-left text-gray-700 text-sm font-semibold mb-2">Comentarios Adicionales:</label>
+        <textarea id="comments" name="comments" placeholder="Comentarios adicionales o instrucciones" rows="4"
+          class="w-full py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+      </div>
+      
+      <button type="submit"
+        class="w-full py-3 px-6 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-500 transition duration-300">Enviar Pedido</button>
+    </form>
+  </div>
+</section>
+
+<!-- Script para añadir más productos -->
+<script>
+  document.getElementById('addProduct').addEventListener('click', () => {
+    const productList = document.getElementById('productList');
+    const productItem = document.createElement('div');
+    productItem.className = 'flex flex-col md:flex-row items-center gap-4 mb-4';
+    productItem.innerHTML = `
+      <input type="text" name="product_name[]" placeholder="Nombre del Producto" required
+        class="w-full md:w-1/3 py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+      <input type="number" name="quantity[]" placeholder="Cantidad" min="1" required
+        class="w-full md:w-1/6 py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+      <select name="presentation[]" required
+        class="w-full md:w-1/6 py-2 px-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-600">
+        <option value="">Selecciona Presentación</option>
+        <option value="100g">100g</option>
+        <option value="200g">200g</option>
+        <option value="300g">300g</option>
+        <option value="500g">500g</option>
+        <option value="1kg">1kg</option>
+        <!-- Añadir más opciones según las presentaciones disponibles -->
+      </select>
+    `;
+    productList.appendChild(productItem);
+  });
+</script>
+
+
+<!-- Footer Section -->
+<footer class="bg-blue-900 text-white py-10">
+  <div class="container mx-auto px-4">
+    
+
+    <!-- Segunda fila con columnas de enlaces y suscripción -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Columna Logo e Iconos (anteriormente "Sobre Nosotros") -->
+      <div class="flex flex-col items-center md:items-start">
+        <img src="logob.png" alt="Doclab Logo" class="h-36 mb-4">
+        <div class="flex space-x-4">
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-facebook-f"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-twitter"></i>
+            <span class="sr-only">Twitter</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-instagram"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-linkedin-in"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna Servicios -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="#" class="hover:text-white">Condiciones</a></li>
+          <li><a href="#" class="hover:text-white">Listado</a></li>
+          <li><a href="#" class="hover:text-white">Cómo funciona</a></li>
+          <li><a href="#" class="hover:text-white">Lo que ofrecemos</a></li>
+          <li><a href="#" class="hover:text-white">Últimas noticias</a></li>
+          <li><a href="#" class="hover:text-white">Contáctenos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Enlaces útiles -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Enlaces útiles</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="#" class="hover:text-white">Condiciones</a></li>
+          <li><a href="#" class="hover:text-white">Condiciones de uso</a></li>
+          <li><a href="#" class="hover:text-white">Nuestros servicios</a></li>
+          <li><a href="#" class="hover:text-white">Únete como Doctor</a></li>
+          <li><a href="#" class="hover:text-white">Lista de nuevos invitados</a></li>
+          <li><a href="#" class="hover:text-white">La lista del equipo</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Suscribir -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Suscribir</h3>
+        <div class="flex mb-4">
+          <input type="email" placeholder="Correo electrónico" class="w-full px-3 py-2 border border-gray-400 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-lg">Suscribir</button>
+        </div>
+        <p class="text-sm text-gray-300">Recibe las últimas actualizaciones por correo electrónico. Puedes cancelar tu suscripción en cualquier momento.</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="p-4 rounded-lg shadow-lg text-center text-white  bg-gradient-to-r from-blue-600 to-blue-700 font-semibold">
+        <p>&copy; 2024 IgarSoft. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+  <!-- Script de JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('searchInput');
+      const sortSelect = document.getElementById('sortSelect');
+      const categorySelect = document.getElementById('categorySelect');
+      const productGrid = document.getElementById('productGrid');
+      const products = Array.from(document.querySelectorAll('.product-card'));
+
+      function filterAndSort() {
+        const searchText = searchInput.value.toLowerCase();
+        const selectedCategory = categorySelect.value;
+        const sortType = sortSelect.value;
+
+        let filteredProducts = products.filter(product => {
+          const name = product.querySelector('h3').textContent.toLowerCase();
+          const category = product.getAttribute('data-category');
+          return (
+            (name.includes(searchText) || searchText === '') &&
+            (category === selectedCategory || selectedCategory === '')
+          );
+        });
+
+        if (sortType === 'price-low-high') {
+          filteredProducts.sort((a, b) => parseFloat(a.getAttribute('data-price')) - parseFloat(b.getAttribute('data-price')));
+        } else if (sortType === 'price-high-low') {
+          filteredProducts.sort((a, b) => parseFloat(b.getAttribute('data-price')) - parseFloat(a.getAttribute('data-price')));
+        } else if (sortType === 'rating') {
+          filteredProducts.sort((a, b) => b.getAttribute('data-rating') - a.getAttribute('data-rating'));
+        }
+
+        // Mostrar los productos filtrados y ordenados
+        productGrid.innerHTML = '';
+        filteredProducts.forEach(product => productGrid.appendChild(product));
+      }
+
+      // Event listeners
+      searchInput.addEventListener('input', filterAndSort);
+      sortSelect.addEventListener('change', filterAndSort);
+      categorySelect.addEventListener('change', filterAndSort);
+
+      // Inicializar la vista con los productos filtrados y ordenados
+      filterAndSort();
+    });
+
+    // JavaScript para el carrusel
+    const images = document.querySelectorAll('.carousel-image');
+    let currentImageIndex = 0;
+
+    function changeImage() {
+        images[currentImageIndex].classList.remove('opacity-100');
+        images[currentImageIndex].classList.add('opacity-0');
+
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+
+        images[currentImageIndex].classList.remove('opacity-0');
+        images[currentImageIndex].classList.add('opacity-100');
+    }
+
+    // Cambiar la imagen cada 3 segundos
+    setInterval(changeImage, 3000);
+
+   // JavaScript para la funcionalidad del menú móvil
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+  
+  </script>
+</body>
+</html>

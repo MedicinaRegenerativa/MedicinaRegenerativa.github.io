@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes y Carrusel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <section class="bg-cyan-100  " style="background-image: url('fondoazul.jpg');background-size: cover; background-position: center;">
+    <div class="container mx-auto p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+              <!-- Carrusel de imágenes -->
+<div class="carousel-section relative w-full">
+    <div class="relative">
+        <img src="o.jpg" class="carousel-image w-full object-contain rounded-lg" alt="Imagen 1" style="height: 28rem;">
+        <img src="oo.jpg" class="carousel-image hidden w-full object-contain rounded-lg" alt="Imagen 2" style="height: 28rem;">
+        <img src="ooo.png" class="carousel-image hidden w-full object-contain rounded-lg" alt="Imagen 3" style="height: 28rem;">
+    </div>
+</div>
+            <!-- Preguntas Frecuentes -->
+            <div class="faq-section space-y-4">
+                <h2 class="text-3xl font-bold text-center mb-8">Preguntas Frecuentes</h2>
+                            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq1')">
+                    ¿Qué es la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq1" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        La ozonoterapia es un tratamiento alternativo que utiliza ozono médico para mejorar la oxigenación y activar el sistema inmunológico del cuerpo. Este enfoque innovador ofrece múltiples beneficios...
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq2')">
+                    ¿Cuáles son los beneficios de la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq2" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Los beneficios de la ozonoterapia incluyen la reducción del dolor y la inflamación, la mejora de la oxigenación de los tejidos, el refuerzo del sistema inmunológico y la ayuda en el tratamiento de enfermedades autoinmunes y degenerativas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq3')">
+                    ¿Es segura la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq3" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Sí, la ozonoterapia es generalmente segura cuando es realizada por un profesional capacitado. Los efectos secundarios son raros y pueden incluir un ligero malestar o fatiga temporal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq4')">
+                    ¿Es segura la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq4" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Sí, la ozonoterapia es generalmente segura cuando es realizada por un profesional capacitado. Los efectos secundarios son raros y pueden incluir un ligero malestar o fatiga temporal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq5')">
+                    ¿Es segura la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq5" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Sí, la ozonoterapia es generalmente segura cuando es realizada por un profesional capacitado. Los efectos secundarios son raros y pueden incluir un ligero malestar o fatiga temporal.
+                    </p>
+                </div>
+            </div>
+
+            </div>
+
+          
+
+        </div>
+    </div>
+</section>
+    <script>
+      <!-- JavaScript para el toggle -->
+
+function toggleFAQ(id) {
+    var content = document.getElementById(id);
+    var icon = content.previousElementSibling.querySelector('svg');
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.setAttribute('d', 'M19 15l-7-7-7 7');
+    } else {
+        content.classList.add('hidden');
+        icon.setAttribute('d', 'M19 9l-7 7-7-7');
+    }
+}
+        // Lógica para el carrusel
+        const images = document.querySelectorAll('.carousel-image');
+        let currentIndex = 0;
+
+        function changeImage() {
+            // Ocultar todas las imágenes
+            images.forEach(image => image.classList.add('hidden'));
+
+            // Mostrar la imagen actual
+            images[currentIndex].classList.remove('hidden');
+
+            // Actualizar el índice
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        // Cambiar de imagen cada 2 segundos
+        setInterval(changeImage, 2000);
+    </script>
+</body>
+</html>

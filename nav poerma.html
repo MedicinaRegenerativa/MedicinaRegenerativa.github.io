@@ -1,0 +1,44 @@
+  <!-- Navbar -->
+<nav class="bg-green-600 shadow-lg fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+            <a href="#" class="flex items-center py-5 px-2 text-white">
+                <!-- Imagen en lugar del SVG -->
+                <img src="logoo.png" alt="Logo Clínica Regenerativa" class="h-12 w-auto mr-2">
+            </a>
+        </div>
+
+        <!-- Primary Nav centrado -->
+        <div class="hidden md:flex items-center space-x-1 flex-grow justify-center">
+            <a href="#" class="py-5 px-3 text-white hover:text-green-300 font-semibold">Inicio</a>
+            <a href="#services" class="py-5 px-3 text-white hover:text-green-300 font-semibold">Servicios</a>
+            <a href="#team" class="py-5 px-3 text-white hover:text-green-300 font-semibold">Equipo</a>
+            <a href="#contact" class="py-5 px-3 text-white hover:text-green-300 font-semibold">Contacto</a>
+        </div>
+
+        <!-- Secondary Nav -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="#appointment" class="py-2 px-3 bg-white text-green-600 rounded hover:bg-green-100 transition duration-300 font-semibold">Agendar Cita</a>
+        </div>
+
+        <!-- Mobile Button -->
+        <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu hidden md:hidden bg-green-700 border-t border-green-500">
+        <a href="#" class="block py-2 px-4 text-white hover:bg-green-500 transition duration-200">Inicio</a>
+        <a href="#services" class="block py-2 px-4 text-white hover:bg-green-500 transition duration-200">Servicios</a>
+        <a href="#team" class="block py-2 px-4 text-white hover:bg-green-500 transition duration-200">Equipo</a>
+        <a href="#contact" class="block py-2 px-4 text-white hover:bg-green-500 transition duration-200">Contacto</a>
+        <a href="#appointment" class="block py-2 px-4 bg-white text-green-600 rounded hover:bg-green-100 transition duration-300">Agendar Cita</a>
+    </div>
+</nav>
+

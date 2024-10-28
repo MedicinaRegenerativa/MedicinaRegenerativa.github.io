@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Medicina Regenerativa</title>
+    <!-- Importación de Tailwind CSS desde CDN -->
+
+    <!-- Importación de la fuente "Poppins" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Importación de Animate.css para animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+       
+
+    <style>
+        /* Aplicar la fuente "Poppins" a todo el documento */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-900 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-4">
+            <a href="#" class="flex items-center py-5 px-2 text-white">
+                <!-- Imagen en lugar del SVG -->
+                <img src="logoo.png" alt="Logo Clínica Regenerativa" class="h-12 w-auto mr-2">
+                <!--<span class="font-bold text-xl">Clínica Regenerativa</span>-->
+            </a>
+        </div>
+
+        <!-- Primary Nav centrado -->
+        <div class="hidden md:flex items-center space-x-1 flex-grow justify-center">
+            <a href="#regeneraaa.html" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Inicio</a>
+            <a href="#services" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Servicios</a>
+            <a href="#about" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Nosotros</a>
+            <a href="#contact" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Contacto</a>
+            <a href="#products" class="py-5 px-3 text-white hover:text-cyan-300 font-semibold">Tienda Virutal</a>
+        </div>
+
+        <!-- Secondary Nav -->
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="#appointment" class="py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white text-lg font-semibold px-12 py-4 rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+        </div>
+
+
+        <!-- Mobile Button -->
+        <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+                <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu hidden md:hidden bg-blue-900  text-center">
+        <a href="#" class="block py-2 px-4 text-white hover:bg-blue-600">Inicio</a>
+        <a href="#services" class="block py-2 px-4 text-white hover:bg-blue-600">Servicios</a>
+        <a href="#team" class="block py-2 px-4 text-white hover:bg-blue-600">Equipo</a>
+        <a href="#contact" class="block py-2 px-4 text-white hover:bg-blue-600">Contacto</a>
+        <a href="#appointment" class="block py-2 px-4 bg-gradient-to-r from-blue-500 to-blue-700  text-white text-lg font-semibold px-12 py-4  shadow-lg hover:scale-105 hover:shadow-2xl transition-transform">Agendar Cita</a>
+    </div>
+</nav>
+
+
+
+ <section class="relative bg-cover  bg-center h-screen" style="background-image: url('madre.jpg');">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-30">
+            <div class="text-center text-white p-8">
+                <h1 class="text-5xl font-bold mb-4">Descubre los Beneficios de la Ozonoterapia</h1>
+                <p class="text-lg mb-6">La ozonoterapia es una técnica innovadora que puede ayudar a mejorar tu salud y bienestar. ¡Conócela!</p>
+                <a href="#more-info" class=" bg-gradient-to-r from-blue-700 to-blue-900 text-white py-3 font-semibold px-6 rounded-full shadow-lg hover:bg-cyan-600  hover:shadow-2xl transition-transform">Más Información</a>
+            </div>
+        </div>
+    </section>
+<!-- Sección con Imagen y Cards Estáticas -->
+<section class="py-16 bg-gradient-to-br from-blue-50 via-white to-blue-100">
+    <div class="container mx-auto flex flex-col lg:flex-row items-start lg:items-start px-6 lg:px-8 space-y-12 lg:space-y-0 lg:space-x-12">
+        
+        <!-- Columna Izquierda: Título y Cards de Información -->
+        <div class="w-full lg:w-1/2 space-y-4">
+            
+
+            <!-- Card 1: ¿Qué es el Ozono? -->
+            <div class="bg-white shadow-lg rounded-lg p-2">
+                <h3 class="text-2xl font-semibold text-blue-800 mb-4">¿Qué es el Ozono?</h3>
+                <p class="text-gray-600">
+                    El ozono es una molécula compuesta por tres átomos de oxígeno (O<sub>3</sub>). Se encuentra de manera natural en la atmósfera y juega un papel crucial en la protección de la Tierra, ya que actúa como un filtro que bloquea los rayos ultravioleta (UV) del sol. El ozono tiene propiedades oxidativas y desinfectantes, lo que le permite eliminar bacterias, virus y hongos.
+                </p>
+            </div>
+
+            <!-- Card 2: ¿Qué es la Ozonoterapia? -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-2xl font-semibold text-blue-800 mb-4">¿Qué es la Ozonoterapia?</h3>
+                <p class="text-gray-600">
+                    La ozonoterapia es un tratamiento médico que utiliza una mezcla de oxígeno y ozono con fines terapéuticos. Se utiliza para mejorar la oxigenación de los tejidos, estimular el sistema inmunológico y combatir infecciones, entre otros beneficios. Este tipo de terapia se emplea en varias especialidades médicas y es valorada por sus propiedades regenerativas y antiinflamatorias.
+                </p>
+            </div>
+
+            <!-- Card 3: Usos Médicos de la Ozonoterapia -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <h3 class="text-2xl font-semibold text-blue-800 mb-4">Usos Médicos de la Ozonoterapia</h3>
+                <ul class="list-disc text-gray-600 ml-4">
+                    <li class="mb-2">Tratamiento de infecciones crónicas .</li>
+                    <li class="mb-2">Terapia complementaria en enfermedades cardiovasculares.</li>
+                    <li class="mb-2">Tratamiento de heridas y úlceras diabéticas</li>
+                    <li class="mb-2">Alivio de dolores musculares y articulares.</li>
+                    <li class="mb-2">Mejorar el rendimiento físico y la recuperación en deportistas.</li>
+                    <li class="mb-2">Tratamiento de enfermedades autoinmunes</li>
+                    <li class="mb-2">Terapia complementaria en enfermedades cardiovasculares.</li>
+                    <li class="mb-2">Tratamiento de infecciones crónicas .</li>
+                    <li class="mb-2">Alivio de dolores musculares y articulares.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Imagen -->
+        <div class="w-full lg:w-1/2">
+            <img src="4.png" alt="Terapia de Ozono" class="w-full h-auto rounded-lg shadow-lg object-cover">
+        </div>
+    </div>
+
+ 
+</section>
+
+<!-- Estilos adicionales para móviles -->
+<style>
+    @media (max-width: 1024px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+</style>
+
+
+
+
+<!-- Call to Action Section -->
+<section class="bg-blue-600 py-12" id="cta">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-white mb-4">Transforma Tu Salud con Ozonoterapia</h2>
+        <p class="text-lg text-white mb-8">Descubre cómo nuestros tratamientos avanzados pueden mejorar tu bienestar.</p>
+        <a href="https://api.whatsapp.com/send?phone=5211234567890&text=Hola,%20me%20gustaría%20recibir%20más%20información."
+       target="_blank"
+       class="inline-block bg-gradient-to-r from-blue-700 to-blue-900 text-white text-lg font-semibold px-12 py-4 rounded-full  hover:scale-105 transition-transform"style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+      Enviar mensaje por WhatsApp
+    </a>
+    </div>
+</section>
+
+<!-- Sección de Aplicaciones del Ozono -->
+<section id="ozone-applications" class="py-20 bg-gray-50">
+    <div class="container mx-auto text-center">
+        <h2 class="text-5xl font-bold text-gray-800 mb-8">Aplicaciones del Ozono</h2>
+        <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+            El ozono tiene múltiples aplicaciones en medicina y tratamientos estéticos. Aquí te mostramos algunas de las formas más comunes de aplicación.
+        </p>
+
+        <!-- Aplicaciones -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mx-4">
+            <!-- Aplicación 1: Ozonoterapia Inyectable -->
+            <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-syringe text-blue-500 text-6xl mb-4"></i>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Ozonoterapia Inyectable</h3>
+            </div>
+
+            <!-- Aplicación 2: Ozonoterapia Tópica -->
+            <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-spa text-green-500 text-6xl mb-4"></i>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Ozonoterapia Tópica</h3>
+            </div>
+
+            <!-- Aplicación 3: Ozonoterapia Insuflación -->
+            <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-wind text-orange-500 text-6xl mb-4"></i>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Ozonoterapia Insuflación</h3>
+            </div>
+
+            <!-- Aplicación 4: Ozonoterapia Intravenosa -->
+            <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-heartbeat text-purple-500 text-6xl mb-4"></i>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Ozonoterapia Intravenosa</h3>
+            </div>
+
+            <!-- Aplicación 5: Ozonoterapia en Baños -->
+            <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
+                <i class="fas fa-bath text-teal-500 text-6xl mb-4"></i>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Ozonoterapia en Baños</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="items-center text-center mx-8 mb-6 pb-10"><!-- Beneficios de la Ozonoterapia -->
+        <h2 class="text-3xl lg:text-5xl font-bold mt-12 mb-6 text-gray-600">Beneficios de la Ozonoterapia</h2>
+            <p class="text-lg text-gray-600 mb-6 mx-4 ">
+                La ozonoterapia tiene múltiples beneficios comprobados. Aquí presentamos algunos de los más destacados:
+            </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <i class="fas fa-heart text-blue-800 text-6xl mb-4"></i>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Mejora la Circulación</h4>
+                <p class="text-gray-600">Aumenta el flujo sanguíneo y la oxigenación de los tejidos.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <i class="fas fa-shield-alt text-blue-500 text-6xl mb-4"></i>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Refuerza el Sistema Inmunológico</h4>
+                <p class="text-gray-600">Ayuda al cuerpo a combatir infecciones y enfermedades.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <i class="fas fa-syringe text-blue-700 text-6xl mb-4"></i>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Alivia el Dolor</h4>
+                <p class="text-gray-600">Puede reducir el dolor crónico y la inflamación.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <i class="fas fa-user-md text-cyan-500 text-6xl mb-4"></i>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Acelera la Recuperación</h4>
+                <p class="text-gray-600">Promueve una recuperación más rápida de lesiones.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <i class="fas fa-smile text-blue-700 text-6xl mb-4"></i>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Mejora el Bienestar General</h4>
+                <p class="text-gray-600">Contribuye a un estado general de bienestar y vitalidad.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                <i class="fas fa-clock text-blue-500 text-6xl mb-4"></i>
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Tratamientos Rápidos y Efectivos</h4>
+                <p class="text-gray-600">Las sesiones son cortas y se pueden realizar de manera efectiva.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="text-center mx-4 mb-12">
+  <!-- Título Principal -->
+  <h2 class="text-4xl font-bold mt-12 mb-6 text-blue-900">Tratamientos Médicos con Ozono</h2>
+  <p class="text-lg text-gray-600 mb-12 mx-2">
+    La ozonoterapia tiene muchas aplicaciones en medicina y estética. Aquí algunas de las más comunes:
+  </p>
+
+  <!-- Card 1: Enfermedades Musculoesqueléticas -->
+  <div class="container mx-auto flex flex-col md:flex-row items-center mb-12 bg-white rounded-lg shadow-lg">
+    <div class="w-full md:w-1/2 px-6 py-8 flex flex-col justify-center">
+      <h3 class="text-2xl font-bold text-blue-900">Enfermedades Musculoesqueléticas</h3>
+      <p class="text-gray-700 mb-4 text-justify">
+        La ozonoterapia es efectiva en el tratamiento de condiciones como la artritis y las lesiones deportivas. Al reducir la inflamación y mejorar la circulación, se acelera el proceso de recuperación.
+      </p>
+      <h4 class="text-lg font-bold text-blue-900 mb-2">Beneficios del Tratamiento:</h4>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Alivio rápido del dolor muscular y articular.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Reducción de inflamación en lesiones deportivas.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Estimulación de la regeneración celular.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Mejora de la movilidad y flexibilidad.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/2 px-6 mb-2">
+      <img src="muscoesqueleto.jpg" alt="Tratamientos Musculoesqueléticos" class="w-full h-auto rounded-lg shadow-md" />
+    </div>
+  </div>
+
+  <!-- Card 2: Tratamiento del Dolor Crónico -->
+  <div class="container mx-auto flex flex-col md:flex-row items-center mb-12 bg-white rounded-lg shadow-lg">
+    <div class="w-full md:w-1/2 px-6 py-8 flex flex-col justify-center">
+      <h3 class="text-2xl font-bold text-blue-900">Tratamiento del Dolor Crónico</h3>
+      <p class="text-gray-700 mb-4 text-justify">
+        La ozonoterapia es utilizada para el tratamiento del dolor crónico, aliviando condiciones como la fibromialgia y la artritis reumatoide. Este tratamiento actúa sobre la causa del dolor, ofreciendo un enfoque integral.
+      </p>
+      <h4 class="text-lg font-bold text-blue-900 mb-2">Beneficios del Tratamiento:</h4>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Disminución significativa del dolor.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Mejor calidad de sueño y descanso.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Menor dependencia de medicamentos.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Mejora general en la salud.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/2 px-6 mb-2">
+      <img src="dolo.jpg" alt="Tratamiento del Dolor Crónico" class="w-full h-auto rounded-lg shadow-md" />
+    </div>
+  </div>
+
+  <!-- Card 3: Medicina Estética -->
+  <div class="container mx-auto flex flex-col md:flex-row items-center mb-12 bg-white rounded-lg shadow-lg">
+    <div class="w-full md:w-1/2 px-6 py-8 flex flex-col justify-center">
+      <h3 class="text-2xl font-bold text-blue-900">Medicina Estética</h3>
+      <p class="text-gray-700 mb-4 text-justify">
+        La ozonoterapia se utiliza en tratamientos estéticos para mejorar la apariencia de la piel, tratando arrugas y cicatrices. Además, estimula la producción de colágeno, promoviendo una piel más saludable y juvenil.
+      </p>
+      <h4 class="text-lg font-bold text-blue-900 mb-2">Beneficios del Tratamiento:</h4>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Mejoramiento en la textura de la piel.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Reducción de manchas y cicatrices.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Aumento de la elasticidad y firmeza de la piel.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Promoción de un aspecto juvenil.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/2 px-6 mb-2">
+      <img src="facc.jpg" alt="Medicina Estética" class="w-full h-auto rounded-lg shadow-md" />
+    </div>
+  </div>
+
+  <!-- Card 4: Enfermedades Cardiovasculares -->
+  <div class="container mx-auto flex flex-col md:flex-row items-center mb-12 bg-white rounded-lg shadow-lg">
+    <div class="w-full md:w-1/2 px-6 py-8 flex flex-col justify-center">
+      <h3 class="text-2xl font-bold text-blue-900">Enfermedades Cardiovasculares</h3>
+      <p class="text-gray-700 mb-4 text-justify">
+        La ozonoterapia puede ser utilizada como un complemento en el tratamiento de enfermedades cardiovasculares, mejorando la circulación y reduciendo el riesgo de complicaciones.
+      </p>
+      <h4 class="text-lg font-bold text-blue-900 mb-2">Beneficios del Tratamiento:</h4>
+      <ul class="list-disc pl-5 space-y-2 text-gray-600">
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Mejora en la circulación sanguínea.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Reducción del riesgo de coágulos.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Control de la presión arterial.</span>
+        </li>
+        <li class="flex items-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6" />
+          </svg>
+          <span>Mejora en la función cardíaca.</span>
+        </li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/2 px-6 mb-2">
+      <img src="2.jpg" alt="Enfermedades Cardiovasculares" class="w-full h-auto rounded-lg shadow-md" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Agrega el enlace a Font Awesome para los iconos -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<!-- Testimonials Carousel Section -->
+<section id="testimonials-carousel" class="bg-gray-50 py-20">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold text-gray-800 mb-12">Lo que dicen nuestros clientes</h2>
+
+    <div class="relative">
+      <div id="carousel" class="overflow-hidden">
+        <div class="flex transition-transform duration-700 ease-in-out" id="carousel-content">
+          <!-- Testimonial 1 -->
+          <div class="min-w-full p-8 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div class="mb-6">
+              <img src="fotoo.jpg" alt="Avatar de Juan Pérez" class="h-24 w-24 mx-auto rounded-full object-cover">
+            </div>
+            <p class="text-gray-600 italic mb-4">
+              "Gracias a su sistema de monitoreo, hemos reducido nuestras pérdidas por fraude en un 40%. ¡Altamente recomendados!"
+            </p>
+            <p class="font-semibold text-gray-800">Juan Pérez</p>
+            <p class="text-gray-500">Gerente General, Empresa XYZ</p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="min-w-full p-8 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div class="mb-6">
+              <img src="perf.jpg" alt="Avatar de María López" class="h-24 w-24 mx-auto rounded-full object-cover">
+            </div>
+            <p class="text-gray-600 italic mb-4">
+              "El análisis de datos que ofrecen es excepcional. Nos ayudaron a identificar patrones de fraude que no habríamos visto por nuestra cuenta."
+            </p>
+            <p class="font-semibold text-gray-800">María López</p>
+            <p class="text-gray-500">Directora de Finanzas, Compañía ABC</p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="min-w-full p-8 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div class="mb-6">
+              <img src="avatar3.jpg" alt="Avatar de Carlos Hernández" class="h-16 w-16 mx-auto rounded-full object-cover">
+            </div>
+            <p class="text-gray-600 italic mb-4">
+              "Su consultoría personalizada ha cambiado la forma en que manejamos el riesgo. ¡No podríamos estar más felices con los resultados!"
+            </p>
+            <p class="font-semibold text-gray-800">Carlos Hernández</p>
+            <p class="text-gray-500">CEO, Start-up Innovadora</p>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="min-w-full p-8 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div class="mb-6">
+              <img src="avatar4.jpg" alt="Avatar de Sofía García" class="h-16 w-16 mx-auto rounded-full object-cover">
+            </div>
+            <p class="text-gray-600 italic mb-4">
+              "Increíbles resultados. Nunca pensé que podríamos detectar fraudes tan rápido. Los recomiendo encarecidamente."
+            </p>
+            <p class="font-semibold text-gray-800">Sofía García</p>
+            <p class="text-gray-500">Jefa de Seguridad, Global Tech</p>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="min-w-full p-8 bg-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div class="mb-6">
+              <img src="avatar5.jpg" alt="Avatar de Ricardo Torres" class="h-16 w-16 mx-auto rounded-full object-cover">
+            </div>
+            <p class="text-gray-600 italic mb-4">
+              "Su equipo es profesional y competente. La mejora en la detección de fraudes ha superado nuestras expectativas."
+            </p>
+            <p class="font-semibold text-gray-800">Ricardo Torres</p>
+            <p class="text-gray-500">Director de Operaciones, Eco Finance</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dots Indicators -->
+      <div class="flex justify-center mt-6">
+        <span class="w-3 h-3 mx-1 rounded-full bg-blue-500 cursor-pointer" onclick="goToSlide(0)"></span>
+        <span class="w-3 h-3 mx-1 rounded-full bg-gray-400 cursor-pointer" onclick="goToSlide(1)"></span>
+        <span class="w-3 h-3 mx-1 rounded-full bg-gray-400 cursor-pointer" onclick="goToSlide(2)"></span>
+        <span class="w-3 h-3 mx-1 rounded-full bg-gray-400 cursor-pointer" onclick="goToSlide(3)"></span>
+        <span class="w-3 h-3 mx-1 rounded-full bg-gray-400 cursor-pointer" onclick="goToSlide(4)"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- JavaScript for Carousel -->
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('#carousel-content > div');
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    const offset = -index * 100; // Offset based on slide index
+    document.getElementById('carousel-content').style.transform = `translateX(${offset}%)`;
+
+    // Update dots
+    const dots = document.querySelectorAll('#testimonials .flex span');
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('bg-gray-400', idx !== index);
+      dot.classList.toggle('bg-blue-500', idx === index);
+    });
+  }
+
+  function goToSlide(index) {
+    currentSlide = index;
+    showSlide(currentSlide);
+  }
+
+  // Auto slide every 5 seconds
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }, 5000);
+</script>
+
+
+<!-- Blog and Articles Section -->
+<section class="bg-blue-600 py-20" id="blog">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h3 class="text-white font-semibold uppercase">ARTÍCULOS DE INTERÉS</h3>
+            <h2 class="text-4xl font-bold mt-2 text-blue-200">Nuestro Blog</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <div class="bg-white p-6 rounded-lg" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+                <img src="ar1.jpg" alt="Artículo 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-center">Título del Artículo 1</h3>
+                <p class="text-gray-600 mb-4 text-center">Breve descripción del artículo. Aquí puedes colocar un resumen o una introducción sobre el contenido del artículo para captar el interés del lector.</p>
+                <a href="#" class="text-cyan-600 hover:text-cyan-800 font-semibold block text-center">Leer Más</a>
+            </div>
+            <!-- Article 2 -->
+            <div class="bg-white p-6 rounded-lg" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+
+                <img src="ar2.jpg" alt="Artículo 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-center">Título del Artículo 2</h3>
+                <p class="text-gray-600 mb-4 text-center">Breve descripción del artículo. Aquí puedes colocar un resumen o una introducción sobre el contenido del artículo para captar el interés del lector.</p>
+                <a href="#" class="text-cyan-600 hover:text-cyan-800 font-semibold block text-center">Leer Más</a>
+            </div>
+            <!-- Article 3 -->
+            <div class="bg-white p-6 rounded-lg" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+                <img src="ar3.jpg" alt="Artículo 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2 text-center">Título del Artículo 3</h3>
+                <p class="text-gray-600 mb-4 text-center">Breve descripción del artículo. Aquí puedes colocar un resumen o una introducción sobre el contenido del artículo para captar el interés del lector.</p>
+                <a href="#" class="text-cyan-600 hover:text-cyan-800 font-semibold block text-center">Leer Más</a>
+            </div>
+        </div>
+        <!-- Botón de Ver Todos los Artículos -->
+        <div class="text-center mt-12">
+            <a href="#"  class="inline-block bg-gradient-to-r from-blue-700 to-blue-900 text-white text-lg font-semibold px-12 py-4 rounded-full hover:scale-105 hover:shadow-2xl transition-transform" style="box-shadow: 0 8px 12px rgba(14, 13, 123, 0.8);">
+      Ver Todos los Artículos</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section class="bg-white py-20" id="contact" style="background-image: url('rr.jpg'); "> 
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-10">
+            <h3 class="text-cyan-500 font-semibold uppercase">Contáctanos</h3>
+            <h2 class="text-4xl font-bold mt-2 text-gray-800">Estamos Aquí para Ayudarte</h2>
+            <p class="text-gray-600 mt-4">Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+        </div>
+
+
+        <div class="max-w-6xl mx-auto px-2">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Sección de Imagen -->
+<!-- Contenedor de la imagen con texto -->
+<div class="relative p-8 rounded-lg flex justify-center items-center">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Contáctanos</h2>
+        <p class="text-lg mb-12">Síguenos en nuestras redes sociales o llámanos</p>
+
+        <!-- Redes Sociales -->
+        <div class="flex justify-center space-x-12">
+            <!-- Facebook -->
+            <a href="#" class="text-blue-600 text-6xl hover:text-blue-800 transform hover:scale-110 transition duration-300">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="#" class="text-blue-400 text-6xl hover:text-blue-600 transform hover:scale-110 transition duration-300">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="text-pink-500 text-6xl hover:text-pink-700 transform hover:scale-110 transition duration-300">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="#" class="text-blue-500 text-6xl hover:text-blue-700 transform hover:scale-110 transition duration-300">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
+        <!-- Sección de Teléfonos y WhatsApp -->
+        <div class="mt-12">
+            <p class="text-lg mb-8">O contáctanos por teléfono o WhatsApp</p>
+            <div class="flex justify-center space-x-12">
+                <!-- Teléfono -->
+                <a href="tel:+123456789" class="text-green-500 text-6xl hover:text-green-700 transform hover:scale-110 transition duration-300">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/123456789" target="_blank" class="text-green-500 text-6xl hover:text-green-700 transform hover:scale-110 transition duration-300">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Información de contacto adicional -->
+        <div class="mt-12">
+            <p class="text-xl">O envíanos un correo a:</p>
+            <a href="mailto:contacto@ejemplo.com" class="text-2xl text-gray-700 underline hover:text-gray-900">contacto@ejemplo.com</a>
+        </div>
+    </div>
+</div>
+
+                <!-- Formulario de Contacto -->
+                <div class="p-6 rounded-lg shadow-lg bg-blue-950 ">
+                    <h3 class="text-2xl font-semibold text-blue-400 mb-6">Envíanos un Mensaje</h3>
+                    <form action="#" method="post">
+                        <div class="mb-4">
+                            <label for="nombre" class="block text-blue-200 font-semibold mb-2">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border border-blue-400 rounded-lg focus:outline-none focus:border-green-800 text-gray-900" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-blue-200 font-semibold mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-blue-400 rounded-lg focus:outline-none focus:border-green-800 text-gray-900" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensaje" class="block text-blue-200 font-semibold mb-2">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-2 border border-blue-400 rounded-lg focus:outline-none focus:border-green-800 text-gray-900" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3  bg-gradient-to-r from-blue-600 to-blue-800 text-white text-lg font-semibold px-12 py-4 rounded-full hover:scale-105 transition-transform"style="box-shadow: 0 8px 12px rgba(0, 43, 149 , 0.8);">Enviar Mensaje</button> 
+                    </form>
+
+    </a>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Agrega el enlace a Font Awesome para los iconos -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!-- FAQ Section -->
+<!--  <section class="py-10 bg-white" style="background: rgba(255, 255, 255, 0.5) url('intra.jpg'); background-blend-mode: overlay;background-repeat: no-repeat; background-position: center; background-size: cover;">--> 
+<section class="py-10 bg-white" >
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Preguntas Frecuentes</h2>
+        <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105" >
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq1')">
+                    ¿Qué es la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq1" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        La ozonoterapia es un tratamiento alternativo que utiliza ozono médico para mejorar la oxigenación y activar el sistema inmunológico del cuerpo. Este enfoque innovador ofrece múltiples beneficios...
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105" >
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq2')">
+                    ¿Cuáles son los beneficios de la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq2" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Los beneficios de la ozonoterapia incluyen la reducción del dolor y la inflamación, la mejora de la oxigenación de los tejidos, el refuerzo del sistema inmunológico y la ayuda en el tratamiento de enfermedades autoinmunes y degenerativas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105" >
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq3')">
+                    ¿Es segura la ozonoterapia?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq3" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Sí, la ozonoterapia es generalmente segura cuando es realizada por un profesional capacitado. Los efectos secundarios son raros y pueden incluir un ligero malestar o fatiga temporal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:scale-105" >
+                <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 bg-white rounded-t-lg focus:outline-none" onclick="toggleFAQ('faq4')">
+                    ¿Tiene desvetajas o efectos secundarios?
+                    <svg class="w-6 h-6 float-right text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="faq4" class="px-6 py-4 text-gray-600 hidden">
+                    <p>
+                        Sí, la ozonoterapia es generalmente segura cuando es realizada por un profesional capacitado. Los efectos secundarios son raros y pueden incluir un ligero malestar o fatiga temporal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add more FAQs as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript para el toggle -->
+<script>
+function toggleFAQ(id) {
+    var content = document.getElementById(id);
+    var icon = content.previousElementSibling.querySelector('svg');
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.setAttribute('d', 'M19 15l-7-7-7 7');
+    } else {
+        content.classList.add('hidden');
+        icon.setAttribute('d', 'M19 9l-7 7-7-7');
+    }
+}
+</script>
+
+
+
+
+<!-- Footer Section -->
+<footer class="bg-blue-900 text-white py-10">
+  <div class="container mx-auto px-4">
+    
+
+    <!-- Segunda fila con columnas de enlaces y suscripción -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Columna Logo e Iconos (anteriormente "Sobre Nosotros") -->
+      <div class="flex flex-col items-center md:items-start">
+        <img src="logob.png" alt="Doclab Logo" class="h-36 mb-4">
+        <div class="flex space-x-4">
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-facebook-f"></i>
+            <span class="sr-only">Facebook</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-twitter"></i>
+            <span class="sr-only">Twitter</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-instagram"></i>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <a href="#" class="text-white hover:text-gray-300 transition text-2xl">
+            <i class="fab fa-linkedin-in"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna Servicios -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Servicios</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="#" class="hover:text-white">Condiciones</a></li>
+          <li><a href="#" class="hover:text-white">Listado</a></li>
+          <li><a href="#" class="hover:text-white">Cómo funciona</a></li>
+          <li><a href="#" class="hover:text-white">Lo que ofrecemos</a></li>
+          <li><a href="#" class="hover:text-white">Últimas noticias</a></li>
+          <li><a href="#" class="hover:text-white">Contáctenos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Enlaces útiles -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Enlaces útiles</h3>
+        <ul class="text-sm text-gray-300 space-y-2">
+          <li><a href="#" class="hover:text-white">Condiciones</a></li>
+          <li><a href="#" class="hover:text-white">Condiciones de uso</a></li>
+          <li><a href="#" class="hover:text-white">Nuestros servicios</a></li>
+          <li><a href="#" class="hover:text-white">Únete como Doctor</a></li>
+          <li><a href="#" class="hover:text-white">Lista de nuevos invitados</a></li>
+          <li><a href="#" class="hover:text-white">La lista del equipo</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Suscribir -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Suscribir</h3>
+        <div class="flex mb-4">
+          <input type="email" placeholder="Correo electrónico" class="w-full px-3 py-2 border border-gray-400 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-teal-500">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-lg">Suscribir</button>
+        </div>
+        <p class="text-sm text-gray-300">Recibe las últimas actualizaciones por correo electrónico. Puedes cancelar tu suscripción en cualquier momento.</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="p-4 rounded-lg shadow-lg text-center text-white  bg-gradient-to-r from-blue-600 to-blue-700 font-semibold">
+        <p>&copy; 2024 IgarSoft. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Agregar el enlace al script de FontAwesome para que los iconos se vean -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+
+
+
+
+    <script>
+        // JavaScript para la funcionalidad del menú móvil
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
